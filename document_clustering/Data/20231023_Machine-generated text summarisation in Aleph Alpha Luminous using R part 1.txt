@@ -1,0 +1,50 @@
+Machine-generated text summarisation in Aleph Alpha Luminous using R: part 1
+
+Machine-generated summarisation saves a lot of work, because a task like this take up a lot of time and is essentially a form of data transformation. In this case here, data transformation starts with large amounts of detailed information, which would take a human more time than a computer to absorb. Then, a broad overview is created that can be more easily digested by humans.
+
+In this blog post, I will be focusing on prompt engineering and the associated process for preparing for machine-generated text summarisation using large language models, Aleph Alpha Luminous in this particular case. The first part deals with the requirements established for text summarisation and the technical challenges related to using LLMs.
+
+Basic methodological considerations
+
+What is a summary? Here is a fairly good definition: ‘Summary is a term used to describe a short, value-neutral abstract. A summary, or abstract, contains all the essential parts of the [overall text]. It should take into account key points and omit others, since it should, by its very definition, be shorter than the overall text. [...] The summary should provide a quick overview [...].’ (Source: https://definition.cs.de/zusammenfassung/). Knowing that, a summary should therefore be concise and provide a value-neutral overview of the key points. How exactly ‘concise’ and ‘key’ are defined lies in the eye of the beholder, which is why opinions vary widely here.
+
+When a piece of writing subject to a formal quality control process is published (for example, a book or a scientific article), a length of 150 to 250 words for the summary has become the established standard. As you can see in the image below, some scientific journals even stipulate that the summary should be limited to only the key points. In the sample summary shown here, this takes the form of a ‘guided’ abstract. Firstly, the purpose of the publication is explained, followed by the research approach (design/methodology/approach), the results (findings), insights or constraints (research limitations/implications) and the added value offered from a research perspective (originality/value).
+
+Especially in recent years, the ‘TL;DR’ = Too long; Did not read format has become norm (see Figure 2). In this example, the editor has set roughly five sentences containing key points as the benchmark, each with a maximum length of 85 characters (including spaces). 
+
+Challenge related to LLM-based text summarisation
+
+Assuming that the input is a cleanly digitalised text format that is not susceptible to errors owing to various intermediate processes involved, one encounters the following challenges:
+
+The challenge: context length
+
+The context length is the maximum text input, measured in token size, that an LLM can understand and process. A number of performance models have emerged here, including, for example (shown in chronological order):
+
+    Luminous: max. 2,048 tokens
+    GPT-3.5 Turbo: max. 16,000 tokens
+    GPT-4: 32,000 tokens
+    Claude: max. 100,000 tokens
+
+What do these numbers mean? Here is a good example to illustrate the point. In the case of GPT-4, this would be sufficient for a short doctoral thesis, whereas this would adequate for several volumes in the Harry Potter series with Claude. Current trends indicate that the context length is getting bigger, tempting one to assume that this is automatically better.
+
+Researchers have further explored this aspect and come to the conclusion that LLMs are also subject to the serial-position effect, which has been found in numerous empirical studies. Under the definition of this term, people tend to remember the first and last items in a series of items better and recall the middle items less well.
+
+This is demonstrated in the diagrams below. Here, different LLMs or language models were tested with different document input lengths. To do this, they used the Q&A use case and created a test data set in which they constructed a correct answer for each question with up to ‘n’ non-relevant text sections without a correct answer. In this experiment, the researchers demonstrated that accuracy is poor when the correct answer is found in the middle of the input text and particularly good when it is at or near the top of the input text.
+
+The reasons for this, they suspect, are the model architecture (which is based on the same transformer architecture used for current LLMs) and tuning. Drawing on these empirical studies, the researchers conclude that a larger context window in LLMs does not lead to better results in terms of use of the input. Based on their conclusions, I further infer that a context window of 100,000 tokens (as is the case with Claude) does not result in better properties in synthesis compared to a context window of 2,048 tokens (Luminous). This implies that the input must be truncated in order to achieve a higher-quality summary. Which begs the question, what is the optimal text length?
+
+The challenge: Financial factors
+
+There are various approaches that seek to create a moving summary or refine the specifications through more precise prompts. A moving summary is the abstract of text passage (part A), which is then incorporated into the summary of a further text passage (part B) and summarised again together with the other text passage. The hope here is that the context will not be lost.
+
+To give an example, I would like to summarise a technical article (see Figure 4) and break it down into three parts: part A (highlighted in blue), part B (highlighted in green) and part C (highlighted in red). I insert each of these text passages into the machine-generated summary (see ‘Prompt’ in Figure 5) and drag the intermediate summary (see ‘Summary’ in Figure 5) into the next summary. With this approach, one can assume that the number of tokens increases non-linearly and that the costs rise in line with this. In a business application with many incidents, this can be a major cost factor. I have attempted to clarify this point in the table below. We can see the three iterations here, each extrapolated with a moving prompt (see figure above) and a non-moving prompt. Even though I did not standardise this, which would certainly be cleaner but less realistic, you can see that 33 additional tokens are added in iteration 2 and 150 tokens in iteration 3 because of the moving prompt. It would be possible to keep the tokens for each summary constant, but that would not add much information. Based on this, I conclude that this approach would lead to a non-linear rise in costs.
+
+The challenge: processing time and hallucination
+
+Based on what you just learnt in the previous section, you can probably guess that not only are the costs associated with a moving summary likely to rise quickly, but the processing speeds will also be quite slow. Since each summary has to be carried over to the next work step, parallelisation is practically speaking impossible. As the text to be summarised grows in length, the number of iterations will also likely increase as well, which in turn leads to longer run times.
+
+Hallucinations have been a well-known issue with LLMs, not least since the Bard marketing event that went horribly wrong. To explain, a hallucination involves the output of incorrect information, with the risk that a language model adds things to the summary that were not found in the input text. One possible way to get around this issue is to check whether the generated summary could in fact be produced via activation from the input content. By defining a threshold, summaries with low activation can be excluded from further processing, thus reducing the risk of hallucinations.
+
+Summary and outlook
+
+Requirements engineering can be an interesting option if what you are looking to do is define a suitable summary in partnership with the customer. That said, it is not possible to infer performance based on the size of the context window of the LLMs and costs can quickly rise exponentially. In this blog post, we addressed some of the requirements and provided background information. In part 2, we will present the technical challenges and our proposal for an industrialised solution.

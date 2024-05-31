@@ -1,0 +1,41 @@
+Trustworthy AI – user-centred requirements
+
+In 1955, Herbert Simon, a prominent researcher in the field of decision-making processes within business organisations, defined the problem-solving process within a rational thinking process:
+
+    1. A set of alternatives is provided.
+    2. Each alternative is assigned a defined added value (for example, profit X as a monetary value).
+    3. Preferences with regards to these defined added values are known. 
+
+If this information is sufficiently well known (alternatives, added values, preferences), it will be possible to define the best possible alternatives. In 1982, psychologists Daniel Kahnemann and Amos Tversky wrote that a key strength and weakness of the human decision maker is their judgement in poorly structured problems. This is an area where AI applications have faltered so far.
+
+The organisational theory developed at the Carnegie School assumes that human beings have a limited capacity for rationality owing to their limited ability to process large amounts of information. This includes tasks such as trend analysis, which previously required the evaluation of large amounts of data and, more importantly, a large number of data sources that often exceeded the cognitive capacities of a human being. The human decision-making process is therefore based on narrower solution spaces, meaning it involves a smaller set of alternatives to solve a problem or incorporates a smaller set of information and data. To mitigate the risks and disadvantages that come with a person’s limited ability to process information, the decision-making process within corporate structures is split up among a large group of decision-makers.
+
+AI is already incorporated into many services, products and business processes that we use every day. For example, AI applications in the corporate context perform key cognitive activities within tasks, such as solving decision-making problems. The Cambridge dictionary defines cognitive abilities as skills ‘relating to or involving the process of thinking and reasoning’. In research into management practices, human cooperation and collaboration have been extensively explored and remain a vibrant field of study.
+
+From a management perspective, the adoption of AI is comparable to the integration of new agents at a company and increases the complexity of the corporate structures. Beyond that, it has a direct impact on our decisions as well as the potential to cause widespread harm to us as individuals and to society as a whole. For this reason, it is necessary to ask how it would be possible at all to integrate AI agents into existing corporate structures in a way that gains the trust of the human workforce and how this could be achieved. In particular, questions regarding trustworthy AI from a socio-technical perspective, driven by principles such as transparency, fairness, explainability, security and privacy, take centre stage. It is a question of how the technical design could look with respect to these principles and how the interaction between human and machine should work.
+
+Due to the requirements that an AI be transparent or fair, IT implementation becomes a truly epic task. This creates the need and demand to move from the relatively expansive principles described above to more manageable requirements. Established frameworks from the field of automation concerning the four types of human response behaviour towards a technology can be used for this purpose. According to Raja Parasuraman and Victor Riley, the four types of response behaviour are:
+
+    1. use
+    2. disuse
+    3. misuse
+    4. abuse 
+
+I will explain what these four types of human trust behaviour in relation to technology are and provide a basic overview of what could be done to counteract them below. Obviously I cannot go into a lot of detail on actual implementation, since this would go beyond the scope of my blog post.
+People have to want it themselves
+
+The use of technology refers to our internal motivation or desire to use a technology. Internally motivated use of technology can be achieved by means of features like trustworthiness and performance efficiency. This desire is driven by the situation or our own biases regarding the respective technology as well as by our immediate environment. These biases tend towards one of two extremes:
+
+    1. A person who is open to the use of a technology;
+    2. A person who may be negatively predisposed towards a technology.
+
+You often hear things like ‘the algorithm is fantastic and looks great, but I am quite happy without it’. This type of attitude in and of itself represents a bias for the person, since they would put themselves at a disadvantage socially by refusing to take advantage of the potential benefits of algorithms versus other people who take full advantage of them. However, aversions to algorithms can be countered through iterative interactions and jointly performed modifications to the human-machine interface. In this way, the likelihood of internally motivated use can be increased.
+People can also use things the wrong way
+
+Misuse means the incorrect use of technology or blind faith in it. In other words, it is based in convenience and is particularly perilous in the context of AI, since the use of an AI in poorly structured tasks is no guarantee of consistent work. If a person opts for convenience, this may also leads to a loss of skills as well them losing any sense of responsibility or their ability to take action when problems arise. It is possible to counteract misuse through ongoing training and appropriately defined human-machine interaction. If you want to learn more about the topic, take a look at my blog post on Trustworthy AI – a wild tension between human and machine interaction.
+People are wary by nature
+
+Use and misuse are logically contrasted with disuse, which refers to the active refusal to use algorithms. Measures to counter this include the iterative improvement of human-machine interfaces as well as ongoing training to provide an understanding of the potential of the algorithms. In addition to this, processes must be established to monitor the algorithms. In this way, everyone involved can obtain reports on the activities of the algorithms and initiate corrective measures, if necessary. The ability to enforce control mechanisms promotes trust in scenarios like this. Human beings prefer interactive options so that they can control the level of detail on their own, if necessary. In addition, certification of the algorithms can also help generate greater trust.
+People can also be evil
+
+Abuse refers to a person’s deliberate design or wilful intent to achieve their own individual goals using a technology, with complete disregard for the consequences. In practice, codes of conduct have been developed to deal with undesirable behaviour. They prescribe what is deemed to be acceptable conduct, for example in the field of auditing or for medical practitioners (such as the Hippocratic Oath). There are also regulatory frameworks in place to ensure appropriate conduct. One example of this is the Sarbanes-Oxley Act (SOX), which was enacted in response to the Enron auditing scandal to mandate greater transparency in financial reporting.

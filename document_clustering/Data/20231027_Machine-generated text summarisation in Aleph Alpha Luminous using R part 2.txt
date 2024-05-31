@@ -1,0 +1,71 @@
+Machine-generated text summarisation in Aleph Alpha Luminous using R: part 2
+
+In part two, I would like to pick up where I left off in my last blog, which looked into automatic text summarisation with Aleph Alpha Luminous using R. This blog post focuses on technical aspects such as specifying the summary scope, prompt engineering and quality factors, because a summary is more than just a summary. Here is a simple example. When a doctor asks for a summary of a patient record, what he or she is looking for is not a summary like you would get for a book. In this specific case, it is necessary to look into the alternative solutions to meet the requirements as best as possible.
+Challenge associated with LLM-based text summarisation
+
+Assuming that the input is a cleanly digitalised text format that is not susceptible to errors owing to various intermediate processes involved, one encounters the following challenges:
+
+The challenge: specifying the summary scope
+
+In the first part of this blog post, I explored the basic methodological considerations, since there is no clear definition of what a summary is. The requirements will be different depending on the industry you are in or the purpose of the summary. From the examples I mentioned in the first part of my post, I would like to use the guided summary as guidance. For a summary that a manager would like to use to initiate further steps, the background and recommendation from an input text are likely to be of particular interest. Figure 1 shows a summary with no specifications. Conversely, Figures 2 and 3 show a guided summary where the background of the text and the recommendation are of interest.
+
+In the case of rulings handed down by a social court, the outcome and the implications for a health insurance provider are likely to be of interest to them. In other words, instead of asking ‘What is the recommendation?’, it would pose the following questions: ‘Is the ruling relevant for invoice verification from the health insurance provider’s point of view?’ ‘Should the amount invoiced be reduced?’ ‘If so, for what reason?’ The figure below presents an example at the very bottom next to ‘Some output’.
+
+The challenge: prompt engineering
+
+The prompt in the figure above is shown under ‘Aleph Alpha Instruction Prompt Template’. In-between you will find the dynamic input resulting from the preliminary work. At the bottom the outcome and output of the language model is shown. The basic structure displayed for the Aleph Alpha instruction templates (2nd generation basic models from Aleph Alpha) is recommended and, in my case, I built the prompt as a zero-shot as seen below.
+### Instruction:
+Answer the question using the given text.
+### Input:
+### Response:
+
+Admittedly, this is not the most elegantly phrased prompt you could imagine, and how the instruction is framed to the language model in fact plays a key role. For example, a scientific paper by Chuang et al. (2023) titled ‘SPeC: A Soft Prompt-Based Calibration on Performance Variability of Large Language Model in Clinical Notes Summarisation’ explores the relationship between the language model output as part of text summarisation and the prompt. According to their findings, making minor changes to manually created prompts (like my prompt above) can prevent significant variance in the output. The following table presents a (non-representative) example.
+
+Examples of performance variability in machine-generated summaries
+
+Prompt 1: Summarise the background of the legal dispute underlying the social court ruling.
+
+    The plaintiff petitions the court to vacate the judgment issued by the Potsdam Social Court on 28 September 2018 and to order the defendant to pay €10,263 in restitution.
+    The defendant is seeking to have the plaintiff’s appeal dismissed.
+    The plaintiff did not have the accident on their way to work nor did he have an accident while travelling on business for the company.
+    This is because the work performed at the time of the accident was not inherently or materially related to the insured activity.
+
+Prompt 2: Give me a brief overview of the background based on the ruling issued by the social court.
+
+    The plaintiff petitions the court to vacate the judgment issued by the Potsdam Social Court on 28 September 2018 and to order the defendant to pay €10,263 in restitution.
+    The defendant is seeking to have the plaintiff’s appeal dismissed.
+    The plaintiff did not have the accident on their way to work nor did he have an accident while travelling on business for the company.
+    This is because the work performed at the time of the accident was not inherently or materially related to the insured activity.
+    The senate ruled that an administrative act that did not rule on specific benefit claims is non-binding.
+    This would be clearly wrong if the decision by the competent benefit provider is obviously incorrect as this relates to the beneficiary and this has a detrimental effect on the other benefit provider.
+
+Prompt 3: Is the ruling relevant for invoice verification from the health insurance provider’s point of view? Should the amount invoiced be reduced? If so, for what reason?
+
+    The lawsuit seeking reimbursement of benefits from the statutory health insurance provider was successful because the health insurance fund being sued is obliged to reimburse all costs in full.
+    The plaintiff is not entitled to benefits from the statutory health insurance provider because the medical treatment and sickness benefits must be provided due to an accident that happened at work.
+    This is not contradicted by the fact that the defendant declined to pay benefits to the petitioner within the scope of employee benefits.
+    The legal basis for the claim for reimbursement is Section 105(1) of the German Social Code – Book X (SGB X). 1.
+    The plaintiff is the competent benefit provider in relation to the benefits at issue, whereas the defendant is the benefit provider who was not initially competent in the matter within the meaning of this regulation.
+    The reason the defendant lacks competence is also not a result of the refusal to grant benefits to the petitioner.
+
+Prompt 4: What is the background?
+
+    The case concerns a legal dispute between a health insurance provider and an accident insurance company. Who is the plaintiff? The health insurance provider.
+    Who is the defendant? The accident insurance company.
+    What is being requested? The plaintiff petitioned the court to vacate the judgment issued by the Potsdam Social Court on 28 September 2018 and to order the defendant to pay €10263 in restitution.
+    The defendant is seeking to have the plaintiff’s appeal dismissed.
+    The plaintiff did not have the accident on their way to work nor did he have an accident while travelling on business for the company. This is because the work performed at the time of the accident was not inherently or materially related to the insured activity.
+    The plaintiff is requesting that the judgment handed down by the Berlin-Brandenburg Higher Social Court on 10 December 2020 be vacated and for the court to dismiss the lawsuit.
+    The plaintiff alleges that an infringement of Section 8(2)(1) of the German Social Code – Book VII (SGB VII) has been committed.
+
+The prompt is also in part responsible for the output and must be tested extensively to determine the most appropriate prompt for the underlying task.
+
+The challenge: Quality factors
+
+Summaries, or rather ‘industry summaries’ to differentiate between the two terms, are important for professionals working in various fields since it allows them to quickly obtain information relevant to their work (for example, a summary of patient records in the clinical space) and make decisions based on this. Ladhak et al. (2023) argue in ‘From Sparse to Dense: GPT-4 Summarisation with Chain of Density Prompting’ that a summary in which a higher density of entities is measured is associated with a higher density of information. In their experiment, this was measured based on 100 randomly selected elements from the CNN/DailyMail Summarisation Test dataset (https://huggingface.co/datasets/cnn_dailymail). For this, they choose an exclusively prompt-based approach (chain of density prompt, or CoD for short), which, all other things being equal, inserts entities of the total text length into the summary over up to five iterations without shortening the text beforehand. The metric of information density is: Density = (∑Entities)/(∑Tokens). The figure below shows the relevant outcome of the next iteration of the CoD prompt. For each iterative step, new entities are extracted from the text in order to add them to the length of the abstract, all other things being equal. The drawback here is that the entities are not cleanly delimited and cannot be filtered afterwards.
+
+By contrast, Isaac Tham’s approach in ‘Summarisation Podcast Transcripts and Long Texts Better with NLP and AI’ is more selective (see the figure below). Here, the input document is chunked, and each chunk is clustered using a cluster analysis. This is an effective strategy since there may be cases where certain topics appear multiple times in the text. Next, each cluster is aggregated individually. You can do a lot with the output later on. Quality means something more than it would in the preceding methodology, since we can explicitly prove where something comes from. I would ascribe a higher quality to this methodology from a trustworthy AI perspective.
+
+ Summary and outlook
+
+In this blog post we further explored the issues involved in creating a machine summary from a technical vantage point. In doing so, we also addressed current trends in scientific research. Most of the background material read in preparation for this blog post was written in the summer of 2023. Though it is likely that there will be a lot more to come in this field, I hope I was able to highlight aspects of the work done by an AI engineer in this area

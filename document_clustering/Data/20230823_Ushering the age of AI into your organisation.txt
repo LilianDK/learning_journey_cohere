@@ -1,0 +1,25 @@
+Ushering the age of AI into your organisation – a case study on adesso
+
+According to adesso’s New School of IT, a company’s IT department needs to take on a new role and evolve from being a pure cost factor into a department that shapes new business models. The three building blocks of the New School of IT also include the ambidextrous attitude and the potential within the organisation. In this blog post, I would like to share with you the results of the discussion with students about a case study created on adesso investigating the topic of ‘the age of AI in your organisation’.
+
+The idea of using adesso for a case study did not come about by chance, as I work at adesso and am well acquainted with the company’s structures.
+
+The case study is anchored in the here and now – the time when we are thinking about what influence AI might have on our day-to-day work and what we want to do with it. With that in mind, the case study takes a brief look at adesso’s financial year for 2022 using last year’s annual report and describes the current socio-technical environment. This look at the situation gives way to the question of where the journey should go from here.
+
+    The release of ChatGPT in November 2022 saw awareness of the potential that AI has to offer once again step into the public spotlight. Indeed, current developments, especially in the area of large language models, show how modern AI technologies can be applied to knowledge-intensive tasks (such as office work or software programming). This means they will affect every sector involving knowledge-intensive tasks without exception. 
+
+While these may be the opening words to our case study on adesso, they could quite easily be the start of a case study on another company – if not basically any other company – that works with knowledge. In the summer semester of 2023, we took this adesso case study to the University of Marburg and presented it to the (bachelor) students there taking the ‘value creation management in the digital transformation’ module before then discussing it.
+By the way, you can download the case study in full (it is about four pages long) using the following link: https://github.com/LilianDK/caseStudies.git
+
+It identified the specific challenges the company faces, evaluated its development and made recommendations for action to the adesso management. An abridged version of the results of the analysis is presented below.
+The challenges facing adesso
+
+One of the challenges the company faces is staying up to date with the regulatory framework in the sectors it operates in and – even better – mastering it. This will help the company avoid running the risk of damaging its reputation and taking unethical action in a highly competitive market environment such as that represented by AI and related data. As a result, the company will be able to focus its attention on its customers and their needs, rather than being preoccupied with its own problems. After all, the hypercompetitive environment is merciless, and will simply pass a company by if it is unsure about it while it tries to solve its own problems. The challenge is securing skilled labour and transforming the work structure into a working world that will be deeply permeated by AI.
+adesso’s development
+
+The case study considers adesso’s development in recent years to be positive, but it should be noted that the margin has plummeted. It is critical that the causes for this are identified and eliminated. While the wide range of subsidiaries that the Group has is a positive – seeing as it drives specialisations that ultimately benefit adesso’s customers – there is also the view that this level of diversity is a complexity driver that could make the necessary transformation into the age of AI more difficult.
+Conclusion: recommendations for adesso
+
+The internal recommendations are aimed at strengthening risk management to monitor compliance with the regulatory environment in conjunction with developing more streamlined processes. The topic of AI should also be pursued internally and support the transformation. This requires a well thought-out change management supported by extensive employee training, among other things.
+
+The fact that adesso does provide or invest in R&D, or only does so to a limited extent (see the annual report), makes establishing and maintaining cooperations all the more important – especially in the context of AI, where we are in a hyper-competitive environment and constantly have to live with surprises.

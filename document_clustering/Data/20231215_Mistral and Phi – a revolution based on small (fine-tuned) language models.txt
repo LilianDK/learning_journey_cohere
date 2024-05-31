@@ -1,0 +1,68 @@
+Mistral and Phi – a revolution based on small (fine-tuned) language models?
+
+In the world of artificial intelligence (AI), it has often been assumed that larger models are better. However, recent research shows that smaller language models, which were previously considered to only be an intermediate step on the path towards larger models, outperform or at least match the performance of large language models (LLMs) in various applications.
+
+LLMs such as GPT-4 have demonstrated that they are remarkably adept at understanding and generating natural language. That said, there are also significant drawbacks such as high energy consumption, large memory requirements and high computing costs. Researchers are therefore investigating the potential of smaller language models that could be more efficient and versatile in certain applications.
+
+New techniques and research show that smaller language models, when fine-tuned to do so, can achieve similar or even better results in certain tasks than their larger counterparts. They can also use techniques such as transfer learning to utilise existing knowledge and adapt more efficiently to specific tasks.
+
+The evolution of LLMs
+
+Large language models such as GPT-3 and GPT-4 from OpenAI or Luminous from Aleph Alpha have made considerable strides in recent years, mainly due to the constant growth in the size of these models. This can be explained under the scale-up hypothesis, which states that larger models are able to recognise more complex and subtle patterns in the data they are trained on. Larger models are better able to capture the diversity and complexity of human language. This generally leads to better predictions and more relevant answers. This has been demonstrated in a series of benchmarks and tests in which larger models performed better than their smaller counterparts. However, these larger models also have their drawbacks. For example, they require considerably more resources to train and operate them, both in terms of computing power and data. They can also be more difficult to control and deliver unexpected or inappropriate responses. Despite these challenges, continuously scaling up the model size has helped improve the performance of language models and open up new use cases.
+
+
+Quality of data is more important than size
+
+Instead of adding an ever-increasing number of parameters, researchers are now focussing on better use of data and more efficient training strategies. The hypothesis goes as follows: a well-trained smaller model has the potential to outperform a poorly trained larger model.
+
+Chinchilla
+
+Chinchilla from Google Deep Mind (https://arxiv.org/pdf/2203.15556.pdf) provides in-depth research on the training of large language models (LLMs). The authors point to an ‘optimum point’ in the LLM training process, beyond which an increase in the number of parameters does not necessarily lead to improved performance.
+
+They also highlight the vital role that the quality and quantity of the training data play, rather than just focusing on the size of the model. This hypothesis was empirically tested using Chinchilla, a model with 70 billion parameters that was trained on a data set of 1.4 billion tokens. Despite its relatively small size, Chinchilla outperformed the Gopher model, which contains 280 billion parameters, in almost every evaluation metric. These results could have significant implications for the future development and training of LLMs.
+
+The authors not only compared the performance of their models, but also the efficiency of the models in relation to the computing power used. This aspect is particularly important since training large language models (LLMs) requires significant computing power, which has both financial and environmental implications.
+
+The study shows that Chinchilla performs better than Gopher despite being a smaller model and that it requires less computing power for training and inference. This means that Chinchilla has an advantage in terms of both performance and efficiency.
+
+Finally, the study delivers key findings when it comes to optimising the process of training LLMs. The authors note that an increase in model size in and of itself is not sufficient to improve performance. Rather, it is important to find a good balance between the model size and the quantity and quality of the training data.
+
+LLaMA-1 and LLaMA-2
+
+LLaMA 1 and LLaMA 2 represent a new generation of LLMs developed by Facebook/Meta AI. These models were trained with trillions of tokens from a variety of sources, including CommonCrawl, C4, GitHub, Wikipedia, Books, ArXiv and Stack Exchange. The size of the LLaMA models ranges between seven billion and 65 billion parameters and can compete with existing LLMs such as GPT-3, Gopher, Chinchilla and PaLM – and in some cases even outperform them. Unlike LLaMA-1, LLaMA-2, the latest generation in Meta’s family of open-source language models, is freely available for research purposes and for commercial applications. There are also fine-tuned models on offer for coding and chatting, which are based on over a million human annotations. Both LLaMA-1 and LLaMA-2 were state of the art at the time of their release.
+
+The fine-tuned LLaMA-2 Chat model uses publicly available datasets and over one million human annotations. Code LLaMA, a code generation model based on LLaMA-2, was trained with 500 billion code tokens. It supports popular programming languages such as Python, C++, Java, PHP, Typescript (JavaScript), C# and Bash.
+
+Mistral 7B
+
+Mistral 7B is an LLM with seven billion parameters that has been specially developed to optimise for performance and efficiency. In a variety of benchmark tests covering areas such as logic, maths and code generation, Mistral 7B outperformed existing models. In addition, a special version – Mistral-7B-Instruct – was developed specifically to follow instructions.
+
+Published under Apache 2.0, a true open source licence, it is open to commercial and private use by anyone and any organisation. High-quality fine-tuning chat models such as the powerful Zephyr and Notus models are already available now. Mistral is the product of French start-up Mistral AI, a company that specialises in the development of generative AI models. Mistral AI was founded by former employees of Google DeepMind and Meta and is based in Paris. Although the company was only just founded in 2023, it has already achieved remarkable success, collecting more than €113 million in seed funding in a very short time and launching a new, state-of-the-art model with seven billion parameters just three months later.
+
+Phi
+
+Microsoft has released a number of language models over the past year. This includes Phi-1 in June, Phi 1.5 a few months later and now Phi-2 in November. Interestingly, despite being relatively small in size with only 1.3 billion to 2.7 billion parameters, these models performed almost as well as models that were nearly twice their size. They can do everything from writing code to analysing images.
+
+In their paper titled ‘Textbooks are all you need’ (https://arxiv.org/abs/2306.11644), the Microsoft research team explains how it is possible to achieve a high level of performance out of a small model like Phi. One of the key aspects of the training process is the use of high-quality data that is more akin to a textbook than the usual unstructured data from the Internet. The authors argue that this approach increases the performance of the model while minimising the cost and environmental impact of training. Some of the data used is generated synthetically by another language model (GPT 3.5), while some of it is filtered from existing code datasets. To further fine-tune and extend the model’s capabilities, the authors also use a small synthetic dataset of code exercises.
+
+The role of fine-tuning
+
+Fine-tuning large-scale language models is a complex process involving making changes to the model. This entails further modifications to a pre-trained model based on a specific task or dataset. The primary goal here is to improve the performance of the model by adapting it to the specific features and nuances of the new data.
+
+Fine-tuning allows the model to acquire specialised knowledge over and above the general language skills gained in pre-training. There are essentially three main reasons why language models are fine-tuned in the first place:
+
+The first reason relates to model ownership. Under this concept, the fine-tuned model belongs to the organisation, which alone can decide who can access it.
+The second reason is the central role played by domain expertise. Since most language models are pre-trained on general data, an organisation that has domain-specific data can use it for fine-tuning. This improves the quality of the answers given by the model, since it has deep knowledge of the company data.
+The third reason relates to data security and privacy. Since a company’s data is generally non-public and considered a company asset, it should not be published or posted on the Internet. The models can therefore be effectively fine-tuned and used within the organisation without the data ever ending up in a cloud or similar. This approach is particularly pertinent for hospitals, hedge funds and similar institutions. However, fine-tuning also has a few drawbacks. These include, above all, the cost of fine-tuning and the expertise required to fine-tune such models.
+
+Structuring the data is an important aspect in ensuring that fine-tuning can be carried out successfully. It is also necessary to evaluate whether the fine-tuned model is actually efficient. This usually requires a direct human review, which can prove very expensive.
+
+Fine-tuning can therefore be highly useful under the right conditions. The smaller a language model is, the fewer resources will be needed for both training and operation. To keep costs low, it therefore often makes sense to choose a smaller model if it provides a similar level of performance.
+
+Outlook
+
+The decision to opt for a small or large language model is largely down to the organisation and the specific use case in question. It can generally be said that smaller models tend to be less expensive than larger ones. However, they can also be more prone to issues such as bias, since they have often been trained on specific rather than general knowledge. This could mean that they are not able to fully generalise and that they are only effective in their specialised field.
+
+One advantage of smaller models is that they can be readily customised for use in their special field, making it possible to develop a tailor-made model for a specific application. However, this means more money for engineering, requires greater expertise in large language models (LLMs) and demands more resources.
+
+It is important to carefully consider whether it makes sense to use a large model that is adapted to the specific task via prompts or to use several small models that run in parallel and are generally only optimised for a specific task. It can end up being even more resource-intensive to use a large number of small models than one big one.

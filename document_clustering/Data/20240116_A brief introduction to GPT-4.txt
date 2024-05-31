@@ -1,0 +1,65 @@
+A brief introduction to GPT-4
+A brief history of GPT models
+
+GPT stands for generative pre-trained transformer. GPT-4 is the fourth generation in the GPT model family developed by the company OpenAI. OpenAI was founded in December 2015 by a group of tech greats including Elon Musk, Sam Altman, Greg Brockman and Ilya Sutskever. The company has made it their mission to develop a safe and useful artificial intelligence (AI) that can contribute to solving some of the world’s most pressing problems, such as climate change, poverty and disease.
+
+OpenAI works on various AI technologies – including speech recognition, image recognition, NLP (natural language processing), robotics and more.
+
+GPT models are rooted in transformer architecture, which was presented in 2017 in a paper by Vaswani et al. entitled ‘Attention is all you need’. Since then, these models have become a popular choice for natural language processing tasks due to their ability to handle wide-ranging dependencies and because of their parallelisability. This architecture forms the basis for numerous ground-breaking AI models.
+
+The first iteration, GPT-1, appeared in 2018 and demonstrated the potential of unsupervised learning and pre-training techniques for natural language understanding. GPT-2, which was launched in 2019, made significant progress in language modelling, with 1.5 billion parameters that produce coherent and contextually relevant texts. OpenAI initially refrained from launching the full version due to concerns about possible misuse.
+
+In June 2020, OpenAI introduced GPT-3 with an incredible 175 billion parameters, representing a major milestone in the field of AI. GPT-3 performed remarkably well on various tasks, such as translation, summarisation and question answering, with minimal fine-tuning at that. However, this wide range limited its broad application.
+
+Subsequent versions – including ChatGPT (the chatbot) – build on the core principles of GPT-3 and refine the model’s capabilities, providing more effective communication and practical applications. These developments have led to the use of GPT models becoming widespread in industries ranging from customer support and content creation to virtual assistants and translation.
+What is GPT-4?
+
+GPT-4 was introduced by OpenAI on 14 March 2023, but the actual training of GPT-4 was already completed by mid-2022. This means that time until its release was spent optimising the model for user alignment and security.
+
+The actual size of GPT-4 is unfortunately unknown. It is speculated that the model has 100 trillion parameters. The figure below very clearly illustrates the size difference between GPT-4 and its predecessor GTP-3. However, it could also be that the model is about the same size but has been trained with better data and for a longer amount of time. Regrettably, this information has not been published. We will describe why this is the case later on in the section on the Technical Report.
+
+In short, GPT uses a neural network that has been trained on a large amount of data to generate natural language text on the basis of input and contextual relationships.
+
+How is it different to ChatGPT?
+
+When developing GPT-4, OpenAI placed great emphasis on the model’s safety. A safe AI model is one that has been developed in such a way that it does not produce any unexpected or undesirable results that could be harmful to users or the environment. This means that the model must be reliable, predictable and able to withstand erroneous inputs or malicious attacks.
+
+GPT-4 can also accept multimodal input. This means that not only text can be used as input, but also images in which GPT-4 can describe objects.
+
+The application is also making progress towards multilingualism, as GPT-4 is able to answer thousands of multiple-choice questions in 26 languages with a high degree of accuracy – from German to Ukrainian, to Korean.
+
+GPT-4 also has a longer memory for conversations. One example for comparison is that the limit on the number of tokens – that is, the number of words or characters that ChatGPT or GPT-3.5 can process in a single pass – was 4,096. This corresponds to about 8,000 words. Once this limit was reached, the model lost track and was no longer able to refer to earlier parts of the text as well as it could previously. GPT-4, on the other hand, can process 32,768 tokens. That means about 64,000 words – enough for an entire short story on 32 pages of A4 paper.
+
+It can be said that GPT-4 is the more intelligent, safer and more improved version of ChatGPT. The application can do everything that ChatGPT can, but at a higher level.
+GPT-4 Technical Report from OpenAI
+
+The paper on GPT4 that OpenAI published, its Technical Report, only contains a small amount of detail. The reason for this is also explicitly mentioned: ‘[...] given both the competitive landscape and the safety implications of large-scale models like GPT-4, this report contains no further details about the architecture (including model size), hardware, training compute, dataset construction, training method or similar.’ Since OpenAI is virtually part of Microsoft, OpenAI acts as Microsoft’s forge for AI. This makes it clear that OpenAI is no longer a research laboratory, but rather a software company. Nevertheless, we would like to briefly present the most important points.
+
+Interestingly, models such as GPT-4 are now being tested more often against human benchmarks and are subject to less scientific testing. Examples of this include tests such as the bar exam and the SAT in the US, among others. Surprisingly, GPT-4’s score on the bar exam was similar to that of the top ten per cent of graduates, while ChatGPT ranked in among the ten per cent that scored the worst.
+
+
+The paper only mentions that GPT-4 was trained using masking and reinforcement learning from human feedback (RLHF). RLHF describes a type of reinforcement learning in which an agent – such as an AI – receives feedback from human experts in order to improve the decisions it makes. Feedback can be in the form of things such as corrections or evaluations that an expert gives to the agent in order to influence its behaviour. RLHF is often used to make reinforcement learning faster and more efficient by using human intuition and experience to guide the learning process.
+
+The exciting thing about this is that the good results in the human tests are mainly due to the masked pretraining – that is, due to the part of the training in which the network mainly receives sentences in which the individual words are masked. With RLHF, the network is better adapted to human communication. So it could be assumed that this approach would be better suited to passing human tests, but the opposite is the case. The reasons for this are not mentioned in the report.
+
+Therefore, the advantage of RLHF lies not in its performance, but rather in the fact that the model is easier for people to use. So you do not need a specially trained prompt engineer – anyone can do it.
+
+The model still has weaknesses in certain areas. Thus, the outputs were often too vague to be useful, resulted in impractical solutions or were prone to factual errors. On top of that, longer answers were more likely to contain inaccuracies. The report also notes that when it came to multi-step instructions for developing a radiological device or biochemical compound, the model tended to provide a vague or inaccurate answer. However, it is important to note that these limitations are specific to particular areas and contexts and do not necessarily apply to all use cases. Nevertheless, GPT-4 was able to reduce the occurrence of these fabricated statements, which are referred to as ‘hallucinations’.
+Risk and mitigation
+
+When developing GPT-4, OpenAI placed particular emphasis on improving safety and alignment – the reason for having done so being to better prepare GPT-4 for commercial use. By improving security and alignment, the model ultimately provides significantly fewer problematic responses. The two measures that were implemented include adversarial testing and a dedicated model safety pipeline.
+
+Adversarial testing is a software testing technique that utilises targeted attacks and unexpected inputs in a specific attempt to identify errors and vulnerabilities in a system. The aim here is to test the system under conditions that it would not normally expect and thereby uncover potential safety risks or errors. Adversarial training can be applied to large language models by deliberately using corrupted or falsified data as input. This makes the model more resistant to attacks and improves its robustness.
+
+To this end, OpenAI hired more than 50 experts who interacted with and tested the model over an extended period of time. The recommendations and training data these experts provided were then used once again to optimise the model. For example, the report mentions that GPT-4 now refuses to answer when asked how to build a bomb.
+
+In addition, a model-assisted safety pipeline was developed to better solve the problems concerning alignment. GPT-4, similar to ChatGPT, is tailored to RLHF. The models can however still generate unsafe output even after undergoing RLHF. OpenAI gets around this problem by using GPT-4 to correct itself. The approach here is to use two components: additional RLHF training prompts with safety-related content and rule-based reward models (RBRMs). RBRMs are GPT-4 zero-shot classifiers that provide an additional source of reward signals for the model in order to encourage the desired behaviour, for example, generating innocuous content and avoiding harmful content. The RBRMs receive three inputs in order to evaluate the output: the prompt (the user’s request), the policy model’s output and a rubric (a set of rules in multiple-choice form) written by a human. Taking these three inputs as a basis, the RBRM uses the rubric to classify the content. This classification allows the model to be rewarded for correctly refusing to answer or for giving a detailed answer to an innocuous request. The results of this approach are shown in the following figure.
+
+
+It is worth mentioning that the level of progress with sensitive prompts is very high, while the probability of error with forbidden prompts is close to zero. This is very pleasing because, although it is not possible to avoid all errors, it has been possible to significantly optimise error avoidance.
+GPT4 compared to LLaMA
+
+LLaMA is a foundation model from Facebook AI Research (FAIR) and is special because it presents a collection of foundation language models with seven billion to 65 billion parameters that are trained on billions of tokens. What makes LLaMA unique is that this application demonstrates that it is possible to train state-of-the-art models using only publicly available datasets without resorting to proprietary and inaccessible datasets, which is not the case with OpenAI and GPT-4. LaMA-13B in particular outperforms GPT-3 (175B) when it comes to most benchmarks. Moreover, LLaMA-65B is able to compete with the best models, Chinchilla-70B and PaLM-540B.
+
+We believe that this model will help democratise both access to and the study of large language models, as it can run on a single GPU. What is really fantastic is that LLaMA is better than GPT-3 but only needs ten per cent of the size, which makes it much cheaper and easier to use. LLaMA is currently still somewhat worse than GPT-4, but it still has not reached the size of GPT-4 either. So it remains to be seen how good the next generation of LLaMA will be.
+It is interesting to note that LLaMA is much smaller but was trained with more data – a possibility that may also have been used for GPT-4.

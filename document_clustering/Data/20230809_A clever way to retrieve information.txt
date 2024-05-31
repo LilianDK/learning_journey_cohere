@@ -1,0 +1,52 @@
+A clever way to retrieve information: conversational agents as a tool to access knowledge held at the company
+
+In the modern business world, it is vital that you are able to access internal company knowledge promptly and in a targeted manner. With the aid of AI language models (LLMs) such as Aleph Alpha’s Luminous, this information can be used efficiently and made available in a user-friendly chat environment. In this blog post I will show which processes and components are needed to make documents and other knowledge searchable in a professional way, thus enabling employees and customers to chat and interact with a company’s documents. To get started, I would like to briefly explain the basic terms and concepts.
+Embeddings
+
+Embeddings are numerical vectors that represent the meaning or semantic concept of words, sentences or documents in a multidimensional space. The diagram on the left illustrates this concept in a clear and simple way.
+
+
+The underlying concept is to process different types of inputs – such as different languages, images and speech – using an embedding model. This model in turn is based on a large language model (LLM) that has been modified so that only the internal representation – in other words, the information in the intermediate step – is output. These vectors can then be compared with each other.
+
+The advantage of an LLM is the vast amount of knowledge from across the planet on which it has been trained. This allows the model to understand the concepts underlying the words. It recognises, for example, that the word ‘dog’ and an image of a dog actually represent the same concept. This extends to both multilingual and multimodal content and includes the ability to recognise synonyms. Making use of these capabilities, the search is made more efficient since it no longer focuses on matching words but on matching a term or image to a concept. By converting text into embeddings, we can measure the similarity between different text elements by calculating the distance between their vectors. This makes it possible to efficiently identify and compare semantically similar content.
+Large language models (LLMs)
+
+LLMs are AI models developed to create and understand human-like texts. These models are based on neural networks, in particular transformer architectures. LLMs are trained on vast amounts of text sourced from the Internet, learning to recognise patterns and relationships in the language.
+
+Well-known examples of large language models include GPT-3 from OpenAI (GPT = Generative Pre-trained Transformer) and the Luminous models from Aleph Alpha. These models are able to generate coherent and relevant texts in natural language, answer questions, translate texts and even solve simple tasks in programming languages.
+
+ChatGPT is also a large language model, but one that has been optimised for dialogue with humans.
+Vector database
+
+A vector database is a specialised form of database designed to store data as high-dimensional vectors. Each of these vectors has a defined number of dimensions, which, depending on the complexity and granularity of the data, can range from ten to several thousand. Vector databases are well suited for storing data that can be represented as vectors, such as text, images and audio files.
+
+The key advantage of vector databases over conventional databases is that they are specifically optimised for processing vectors, which enables direct vector comparisons. The embedding creation process only needs to be done once or updated as needed when new documents are added. This greatly simplifies and speeds up the management and retrieval of information, which has a positive effect on the efficiency of the overall system.
+
+Examples of vector databases include Chroma, Pinecone and Qdrant.
+LangChain
+
+At its core, LangChain is a framework built around LLMs. It can be used for chatbots, generative question-answering systems (GQA), to create summaries and much more. The central idea behind the library is to link different components to generate advanced use cases around LLMs. The chains can consist of several components made from different modules – a language model like Luminous from Aleph Alpha and a vector database, that is, a type of persistence and prompts (the instructions to the language models).
+Architecture
+
+My architecture is visualised in the screenshot below.
+
+
+To begin, the main goal is to make the knowledge available in a company usable. This is typically found in the form of digital documents, which are broken down into individual components via pre-processing. Depending on the level of complexity, this is done either manually or automatically. These text fragments are then used to generate embeddings, which are stored in a vector database. An embedding model suitable for this purpose is Luminous Explore, which was described in an excellent blog post by Aleph Alpha: Luminous Explore: A Model for World-Class Semantic Representation
+
+When a user asks a question, an embedding is first created for this question. This is then compared in the vector database with the existing document embeddings and the best matching results are returned. The question is next passed along with the results to the Luminous Complete model, which generates a suitable answer. Luminous Explain can then be used to clarify which part of the document the answer is based on.
+Integration options
+
+There are a wide range of flexible options to integrate this solution. The back-end architecture allows for easy integration into various platforms, including traditional websites, chatbots in Microsoft Teams or even speech-enabled systems. The modular and scalable design of the architecture ensures rapid implementation on almost any system. By providing a universal interface, the solution can be seamlessly integrated into a variety of applications, programmes or websites. This approach allows you to take advantage of the benefits of powerful semantic search and analytics in a wide variety of scenarios and contexts to optimise user experiences and streamline access to useful information.
+In this demonstration, I am presenting an application that illustrates the procedure described above. In step one, a book on synthetic materials was converted into embeddings and indexed accordingly. In the next step, the user can enter a search term. The search term the user enters is used to identify the document that best matches the term which is then displayed in the document panel. Luminous Complete is then used to generate a precise and relevant response to the original question. The combination of these technologies makes it possible to access information efficiently and intuitively, saving users valuable time and allowing them to focus on their core tasks.
+Possible uses
+
+There are many possible uses for conversational agents. I would like to present a few examples of these here:
+
+    Customer support: A conversational agent can be used at companies to help customers solve their problems by extracting semantically appropriate answers to their questions from a knowledge database.
+    E-commerce: A conversational agent can be used to help customers find suitable products by analysing their queries and offering relevant product suggestions based on their needs and preferences.
+    Personal assistant: A conversational agent can act as a digital assistant that helps users organise their tasks, set reminders, find information on the Internet or even write e-mails and messages.
+    E-learning: A conversational agent with semantic search can be used in learning environments to help pupils and students find relevant information and learning materials tailored to their specific questions and needs.
+    Healthcare: A conversational agent can help patients and medical staff by providing information on diseases, medicines and treatments, or even assist in the diagnosis of diseases by accessing medical literature.
+    Travel planning: A conversational agent can help travellers find destinations, flights, hotels and activities by taking into account their preferences and requirements.
+    News and content discovery: A conversational agent can help users discover personalised news and content based on their interests and preferences.
+    Human resource management: A conversational agent can help increase the efficiency of HR departments by helping to answer employee queries, conducting employee surveys or managing applicant data.

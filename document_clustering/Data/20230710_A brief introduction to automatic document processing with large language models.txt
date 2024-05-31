@@ -1,0 +1,89 @@
+A brief introduction to automatic document processing with large language models
+
+In today’s information society, companies and organisations are constantly confronted with the challenge of efficiently managing and processing large volumes of documents and data. Large language models (LLMs) offer an innovative solution to tackle this task. The potential applications of LLMs such as Aleph Alpha’s ‘Luminous’ series range from automatically extracting information from documents to summarising text and recognising patterns in unstructured data. By using artificial intelligence (AI) and machine learning, LLMs are able to achieve a human-like understanding of text and reach a level of text processing ability that is similar to that of humans. This capability not only makes it possible to save time and resources, but also to reduce human error and increase the accuracy of results. The use of LLMs for document processing therefore offers significant advantages in terms of efficiency, accuracy and scalability and constitutes a forward-looking technology that helps organisations to successfully manage the ever-growing flow of information.
+The problem
+
+In the modern work environment, documents often appear in various formats, such as images, scans and PDFs. Processing these documents poses a significant challenge, as each format is uniquely complex.
+Pre-processing
+
+When pre-processing input documents, it is important to be mindful of the different formats. For machine-readable PDFs, both the text and exact coordinates can be extracted together. For example, when information appears in the same place in two documents, it does not necessarily mean that it is the same information. Tables in PDFs can also be depicted in different ways and are therefore difficult to recognise. Processing scans or images is even more difficult because the text cannot be extracted directly from the image. OCR technologies aim to automatically recognise text from image files or scanned documents and convert it into digital, editable text formats.
+
+An alternative option is to use multimodal models. These AI systems simultaneously process and integrate information from various modalities, such as text and images. By combining and understanding different sources of information, they make it possible to analyse and interpret data more comprehensively. Examples of such systems include Aleph Alphas Magma or GPT-4. However, these models do not specialise in text, which is why employing an OCR system can be useful, as it is specifically optimised for text recognition – regardless of whether the text is handwritten or typed.
+Prompting
+
+Successfully implementing language models for the retrieval of information requires careful planning and optimisation. The design of the input prompt is an important factor in this context. Language models used for information retrieval purposes are often not as aligned to people as chat models. Therefore, it can be helpful to design the prompt (the input to the model) in such a way that it corresponds to the model’s particular ‘language’. For example, a system message could read: ‘You are a bot that is an expert for extracting information. But you only speak JSON.’
+
+One possible prompt could then be formulated as follows: ‘Please extract me the following information from the text: [‘price’, ‘amount’, ‘name of customer’, ‘address of customer’].’ The most effective approach to optimising prompt design should be iterative, whereby different variants are tested and adapted to achieve the best results possible.
+
+Another important aspect is the adjustment and optimisation of the text that is fed into the model. Since almost every character in a language model is considered a token, excessive spaces and line breaks can cause unnecessary costs.
+
+Few-shot learning is another optimisation method. Simply put, it is about giving the model examples that help it to better understand the task at hand. This means that in the document processing scenario, you would give the model an example, such as an invoice and the data to be extracted, in addition to the instructions.
+
+
+The advantages and disadvantages as well as potential problems and solutions for different approaches to extracting information are described below.
+Extracting individual or multiple keywords
+
+Advantage:
+
+    With precise prompts, targeted information can be accurately determined.
+
+Potential problems:
+
+    It can be difficult to get the model to prevent the model from giving out information even though it does not actually have any data to use.
+    Risk of hallucinations in which the model generates false or irrelevant information.
+
+The solution: Aleph Alpha Explain
+
+Disadvantage:
+
+    Inefficient and expensive, as each attribute requires one pass with a redundant input
+
+
+Extracting lots of keywords in JSON
+
+Advantage:
+
+    The language model is able to extract several pieces of information at the same time
+
+Problems: Hallucinations
+
+The solution: Explain from Aleph Alpha
+
+Extracting lots of keywords or tables as tables
+
+Advantage: The language model is able to extract lots of information at once in tabular form
+
+Problems: Hallucinations
+
+The solution: Explain from Aleph Alpha
+
+Disadvantage: Post-processing can be a little more complicated, for example, if regexes (regular expressions) have to be used to process the extracted data.
+
+
+All things considered, the choice of method for extracting keywords and information from texts depends on the specific requirements and resources. By testing and comparing different approaches, you can find and optimise the best method for your application.
+Conclusion regarding extracting individual or multiple keywords
+
+The recommendation, however, is to extract lots of terms in JSON or as a table, as this usually keeps the cost per page at around one to two cents or even cheaper.
+Aleph Alpha Luminous Explain
+
+Explain is a new feature from Aleph Alpha that aims to solve the problem of language models (LLMs) hallucinating. LLMs tend to make up information or lie when they do not know exactly how to respond to a query. Explain provides a solution to this problem by allowing the user to identify whether the information generated by the LLM comes from the text or not.
+Evaluation and iteration
+
+To be able to optimise the prompt efficiently, it is advisable to have a small, diverse dataset consisting of 10 to 30 documents. This dataset should of course be integrated into a small pipeline, as doing so allows for quick iteration and initial testing, which makes it easier to identify problems and adjust the prompt without spending a lot of time. Once the evaluation of the smaller data set yields satisfactory results, it is recommended to scale the test to a larger data set (50+) in order to review the model’s performance under more realistic conditions. It is important to emphasise that there is often talk of adjusting models to fit a domain or ‘fine-tuning’.
+
+In practice, however, this is often not necessary because instructions and examples can be used to bring the model closer to the context and the domain without having to do any fine-tuning. Fine-tuning can be problematic, as it usually costs between €10,000 and €250,000 and has to be hosted by the large language models’ (LLMs) provider, which means additional inference costs. This is less advantageous in terms of both scalability and cost. Therefore, optimising prompts via instructions and examples should be taken into consideration as a more efficient and cost-effective alternative.
+
+The standard metrics can be used to evaluate the results:
+
+    Accuracy measures the ratio of correctly predicted results to the total number of predictions.
+    Precision is the ratio of true positives to the sum of true positives and false positives, while ‘recall’ is the ratio of true positives to the sum of true positives and false negatives. These metrics are particularly useful when the classes in a dataset are unbalanced or the cost for false predictions varies.
+
+Special metrics for texts, such as the Levenshtein distance, are also recommended. The Levenshtein distance is a metric for measuring the similarity between two strings. It specifies the minimum number of individual character changes (insert, delete or replace) required to transform one string into the other. It is also important to conduct a thorough evaluation in order to determine the optimal prompt and the appropriate model in terms of cost. Each token (each word in the input) incurs costs, and larger and more powerful models are usually more expensive. In order to effectively keep track of all relevant evaluations and metrics and make informed decisions, it is essential to use a professional experiment tracking system.
+Example repository:
+
+An example repository was created to demonstrate how easily document processing can be done using Aleph Alpha’s Luminous models. You can learn more about this at https://github.com/mfmezger/document_processing.
+Conclusion
+
+Using prompts in larger language models offers a more efficient and flexible solution than training smaller models. One of the main reasons for this is the lower risk of overfitting when working with larger models, as they typically have a more extensive knowledge base and a greater ability to make generalisations. Smaller models, on the other hand, may be more prone to overfitting when trained on limited or specific datasets. Larger language models are also easier to adapt because they have learned from a wider database and are therefore better able to adapt to different contexts and use cases. This makes it possible to use the models more efficiently without having to go through the training process from scratch when the requirements change. Another advantage of using prompts in larger language models is that they are better suited for use in critical areas. Since the models are not directly trained on potentially sensitive or confidential information, such as secret knowledge or health data, there is less risk of such information being inadvertently disclosed or misused.
+
+Smaller models trained on such data, in contrast, might disclose unwanted information or be unable to appropriately handle sensitive content. All in all, using prompts in larger language models offers a number of advantages in terms of efficiency, adaptability and security, especially in critical areas of application. The reduction of overfitting risks, the flexibility to meet changing requirements and the protection of sensitive data are features that make these models a preferred choice for a wide range of use cases and industries.

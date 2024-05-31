@@ -1,0 +1,70 @@
+A look back the highlights from the world of AI in 2022
+
+Looking back on the past year, we cannot ignore the incredible progress and developments that have been made in the field of artificial intelligence (AI). From breakthroughs in natural language processing and machine learning to the increasing use of AI in a variety of industries, the impact of this technology is being felt around the world.
+
+In my review of the year, I will take a look at some of the most exciting and noteworthy achievements in the field of AI and highlight the potential risks and challenges that come with its rapid progress. We will also look at the ethical considerations surrounding the use of AI and the importance of responsible development and application.
+
+This year, it will be crucial to continue the discussion about the role of AI in society and how we can use its potential to bring about positive change. I hope this look back serves as a helpful guide and food for thought as we navigate the ever-evolving landscape of artificial intelligence.
+Large language models – the hype surrounding ChatGPT
+
+I would like to start with an AI topic that closed out 2022 – ChatGPT. This is the prototype of an AI chatbot developed by OpenAI that specialises in chats and conversations. OpenAI is an artificial intelligence research lab founded by Elon Musk, Sam Altman and Greg Brockman that focuses on AI development, particularly neural networks and machine learning.
+
+OpenAI aims to promote progress in artificial intelligence and contribute to its safe and responsible use. The company has made a number of important contributions to AI research, including developing new algorithms and technologies, publishing scientific papers and providing AI tools and resources to the public. In 2019, OpenAI received a billion-dollar investment from Microsoft, which at least partially calls into question the institution’s independence. Nevertheless, OpenAI is one of the best AI research labs in the world. ChatGPT was released in November 2022 and reached more than one million users in just five days. ChatGPT is a GPT 3.5 network, a transformer architecture, an interim version on the way to the long-awaited GPT 4 version expected in the first quarter 2023. GPT4 is expected to be another huge leap in the field of natural language processing and will also perform a lot better than ChatGPT.
+
+ChatGPT is very good at talking to people, writing programmes (which mostly work), summarising texts and much more. However, the model also likes to invent facts (referred to as ‘hallucinations’) – for example, the programme has already completely invented entire studies, including results, for some queries. In general, ChatGPT has moral principles, but these can easily be undermined by tricking it. A recurring problem with these models is that they have to be trained over several months, which means they are never up to date with the current trends and latest information. Generally speaking, the simpler the tasks, the better the results ChatGPT produces. However, as soon as the tasks become more complex and require more knowledge, the model is usually overwhelmed. That said, all in all, ChatGPT is a great prototype that shows a way in which AI can be used disruptively in the labour market.
+
+Has an AI developed a consciousness? – The Google LaMDA controversy
+
+According to a report in the Washington Post, Blake Lemoine – a software engineer at Google – was put on leave after he claimed that an AI algorithm developed by Google called LaMDA had a consciousness and a soul. The software engineer became convinced this was the case after talking to LaMDA. The programme is comparable to a seven or eight-year-old child. Since no one at Google shared this belief, Lemoine allegedly presented documents about the chatbot to a member of the US Senate and claimed that Google discriminated against his religious beliefs. As a result, he was fired by Google. Lemoine has since published a transcript of one of his conversations with LaMDA. To give you some background information, LaMDA is a language model for conversations like ChatGPT, but was trained without using feedback cycles involving real people.
+
+I once asked a language model (ChatGPT) if it had a consciousness.
+
+For the sake of completeness, I should point out that this is a critical problem for AI companies thanks to the LaMDA debate and this response was probably deliberately trained by the developers. This is comparable to the fact that the models are not obviously racist or sexist.
+
+
+This is something of a double-edged sword, as these models were trained on the basis of texts written by humans. As a result, human prejudices and inclinations naturally flow into the texts it delivers. But this also allows these programmes to interact almost seamlessly with humans, and they are able to understand human communication and hold a normal conversation. However, the claim that LaMDA has a consciousness was rejected as untenable by experts across the board. It could also not be proven through communication with the AI.
+The European Union’s AI Act – regulating AI
+
+The AI Act is a legislative proposal by the European Union to create a framework to regulate artificial intelligence in the EU. The proposed legislation aims to ensure the safety and reliability of AI systems and to protect the fundamental rights of individuals in relation to the use of AI.
+
+The law assigns applications of AI to three risk categories:
+
+    Unacceptable
+    High-risk
+    Unregulated
+
+Applications that create an unacceptable risk, such as government-run social scoring, are banned. High-risk applications, such as a CV scanning tool that ranks job applicants, are subject to specific legal requirements. Applications that are not explicitly banned or listed as high-risk are largely left unregulated.
+
+The law aims to ensure that AI is used in a way that benefits society and protects individual rights. Establishing clear guidelines for the development and use of AI systems should address concerns about possible negative effects of AI, such as bias and discrimination. The law also aims to promote transparency and accountability in the use of AI by requiring organisations to clearly justify the decisions of their AI systems.
+
+The AI Act is still at the draft stage. If passed, the law could become a global standard for regulating AI and have a significant impact on the development and use of AI technologies. The law has already been criticised for its exceptions and loopholes that could limit its effectiveness in ensuring responsible use of AI. Proposals have also been made to improve the law by providing more flexibility to respond to new and emerging risks as they arise.
+
+For more information on the AI Act, visit https://artificialintelligenceact.eu/.
+Generative AI – AI in art
+
+Generative AI is a type of artificial intelligence that focuses on generating new content rather than just identifying and classifying existing content. It uses machine learning algorithms to create new content based on a set of input data or a set of rules or constraints. This content can be text, images, music or other forms of media. Generative AI can be used to develop new ideas, designs or products, or to generate content that is similar to existing content but with variations or differences. Some examples of generative AI include language translation, image generation and music composition.
+
+Fittingly, there was a minor scandal in the art scene. The Colorado State Fair held an art competition in which Jason Allen submitted a picture that he had created using the AI software Midjourney. The picture was submitted under the name ‘Jason M. Allen via Midjourney’ and won first prize in the ‘Emerging Digital Artists’ category. This sparked a debate about the use of artificial intelligence in art, as some people thought it was plagiarism or even fraud, as the picture was not man-made. However, competition officials said that under current rules, it is not illegal to create artwork using AI, but that this could change in the future.
+
+
+Specifically, we are talking about the Stable Diffusion application – the open source variant of Dalle 2. It was invented by OpenAI, who I mentioned earlier, and then later exclusively bought by Microsoft and integrated into Microsoft Azure – Microsoft’s cloud computing division.
+
+As with ChatGPT, it has been possible to follow suit with open source and achieve comparable results with Stable Diffusion. Every user can generate their own images with just a few prompts.
+
+An example of Dalle 2, I was able to create this image by entering the sentence, ‘panda mad scientist mixing sparkling chemicals in a laboratory, with an explosion of colours in a background’.
+
+One model to rule them all – one AI for everything
+
+Another very interesting development in 2022 was that a number of research teams stopped developing an AI to tackle a specific problem, but instead developed an AI that can solve multiple problems and perform multiple tasks. This is called the ‘emergent skill of large language models’ and means that an application not only needs to be able to create cooking recipes, but also to write books and computer programmes without being optimised for these tasks. Furthermore, an application must be able to handle both text and images.
+
+In spring 2022, Google published the Pathways Language Model (PaLM), which is an application that achieved excellent results in solving hundreds of problems without having been explicitly trained to do so. A short time later, Gato was introduced. Gato is an application from DeepMind, a subsidiary of Google, which is known for having built an AI that beat the best ‘Go’ player in the world. The application is an AI that can solve 600 different problems, including playing computer games, stacking building blocks and Lego bricks or creating pictures.
+
+There is no limit to what these kinds of general models could do. They fall squarely within the AI Act planned by the European Union, as they need to be registered with the authorities and checked regularly. The problem is that these types of applications have image and speech recognition, audio and video generation, pattern recognition, question and answer recognition and translation capabilities.
+
+Looking to the future, it may get to the stage that these applications have become the perfect complement to humans and will probably become indispensable. For example, an AI could be used as a doctor’s digital assistant and take care of all the administrative tasks automatically. This would give the medical staff more time for their patients.
+Conclusion
+
+2022 was full of interesting and new developments in the world of AI and the field is evolving at an incredible pace. And there is still more to come: OpenAI GPT 4 is expected to launch this year – an enormous step forward, as the visualisation of the number of parameters shows:
+The much larger number of parameters in GPT-4 means it will probably outshine ChatGPT and GPT3 and have much better performance. Of course, this has also come at a much higher cost to the environment and users. The problem with these networks is that they require a lot of energy and time to be trained.
+
+The AI language model Bloom produced 50 tonnes of carbon while it was being trained. For comparison: one tonne of carbon corresponds to driving 3,300 kilometres in a petrol car, a flight from Frankfurt to New York or 8,800 cups of coffee. It was trained for four months on 384 A100 graphics processors (which cost about €17,000 each). The training process cost seven million dollars in total. Besides this disadvantage in terms of time and costs, these types of models also have an advantage in that you no longer have to re-train them for every purpose; instead, you can adapt them by using specific commands (prompts), eliminating the need to re-train them. I will go into this technology in more detail in another blog post. 

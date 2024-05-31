@@ -1,0 +1,105 @@
+The best Visual Studio Code extensions for Python developers
+
+In software development nowadays, Python is one of the most popular and versatile programming languages. It has now become one of the preferred tools for use cases such as data analytics, data engineering, machine learning and much more. As a Python developer, it is critical that you have the right tools in order to be productive and write high-quality code. One of the most popular integrated development environments (IDEs) for Python developers is Visual Studio Code (VS Code).
+
+In this blog post, we will be focusing on the best Visual Studio Code extensions designed specifically for Python developers. These can help you become more efficient at work by streamlining your development workflow and providing practical features and integrations. Whether you are an experienced Python developer or just starting to learn the language, these extensions promote higher productivity and help you do your best work.
+Dev Containers
+
+At the top of our list is the Dev Containers extension. Development environment containers, also known as dev containers, provide isolated and reproducible working environments based on container technologies such as Docker. They offer developers a number of advantages. Here are just a few of them:
+
+    Uniform working environments: Dev containers ensure that all developers are using the same environment, thus avoiding inconsistencies and unexpected behaviour owing to there being different local setups.
+    Easy to set up: Using dev containers, developers can quickly and easily set up a fully configured working environment without having to manually install dependencies and tools.
+    Reproducibility: Because dev containers encompass the entire development environment within a container, they can be easily shared and reproduced on different computers, making it easier for users to collaborate and perform debugging.
+    Platform-independent: Dev containers allow developers to work on different operating systems by providing a unified environment that can run on any platform that supports container technology.
+    Easy to update: Changes to the development environment can be centrally managed and easily distributed to all developers via updates to the dev container. This reduces the amount of time and work needed to update individual setups.
+
+Dev containers are also now available on GitHub, where they are called codespaces, and on other platforms. This has the benefit of allowing a developer to use a Windows or iOS laptop but develop in a Linux environment.
+Remote SSH
+
+The Visual Studio Code Remote – SSH extension lets developers connect their local Visual Studio Code instance to remote systems via a secure shell (SSH) connection. This extension really comes in handy when you need to work on remote servers or virtual machines that run on different operating systems and use different libraries or resources.
+Python extension pack
+
+First of all, it is recommended that users install one of the numerous Python extension packs since these often contain Python, Python tests and even Jinja or similar extensions. These packs typically include the basic functionality for Python development. However, you would be making life unnecessarily difficult if you were to rely solely on these standard packs. There are many more useful extensions that can help you optimise your development process and increase your productivity.
+autoDocstring
+
+The autoDocstring extension is one of the most important extensions for developers who want to document their code in a professional way. autoDocstring automatically analyses the method signature that you wish to document and generates a docstring in which the variable names and types are pre-integrated, provided that correct typing has been used. This saves you time and work in code documentation and helps make the development process more efficient and structured.
+
+
+This docstring was generated automatically and can be adapted to comply with different formatting standards such as Google, Sphinx and the like.
+GitHub Copilot
+
+GitHub Copilot is a revolutionary AI-powered code completion tool developed jointly by OpenAI and GitHub. It has been specially trained to assist developers when programming by automatically providing code suggestions for a variety of programming languages and frameworks. The matching plugin makes it possible to integrate Copilot into Visual Studio Code, enabling the tool to scan the active code as well as files in the project and provide suitable suggestions to complete the code.
+
+GitHub Copilot X is set for release at the end of the year. Currently in a technical beta, Copilot X will enable even more features, especially in the area of automated test generation, to name one example.
+
+Better Comments
+
+The Better Comments extension enhances the comment function by adding colour highlights to special comments, making it much easier to spot important notes and references in the code. This added visual cue makes annotations clearer and better structured, which ultimately improves the readability and comprehensibility of the code.
+
+Gitignore
+
+This extension has proved to be an indispensable tool for developers that enables them to efficiently manage .gitignore files. It also offers a broad range of templates tailored to most programming languages, compilers and development tools. The templates provided with the extension make it easier to set up projects and help to optimise and speed up the development process.
+Indent Rainbow
+
+This Python extension significantly improves the readability of code by using different colours to signify different indentation levels. This allows users to more quickly understand the code structure and makes it easier to identify code blocks that belong together.
+
+Sources of error, such as incorrectly indented code blocks, can be spotted and removed more quickly, helping to avoid errors and ensuring more stable and reliable code.
+
+Window Colors
+
+The Window Color Visual Studio Code plugin is a practical add-on that assigns a unique colour to each new VS Code window based on a hash value of the root directory name. As a result, each project or workspace has a different colour in the activity bar and title bar.
+
+Because of this, you can quickly and easily see which window you are currently in and thus optimise your workflow.
+
+MarkdownLint and Markdown All in One
+
+Generally speaking, documentation, in the form of a readme file to give an example, is often written in the markdown format. That is why it is important to have the right tools available to edit markdown files efficiently.
+
+The MarkdownLint plugin for Visual Studio Code is an extension that analyses your markdown text and identifies possible errors or inconsistencies.
+
+Markdown All in One is another recommended plugin, offering a variety of code completion functions and other useful features such as the auto-creation of a table of contents. Although you may not use this plugin every day, it is proving to be an indispensable tool for editing markdown files.
+SonarLint
+
+The SonarLint plugin for Visual Studio Code is an extension that analyses your code in real time and identifies potential errors, vulnerabilities, code smells or technical debts.
+GitLens
+
+The GitLens plugin for Visual Studio Code is an extension that augments your code with Git information and provides advanced Git integration features. This plugin allows you to explore the history, authors, as well as changes to and relationships in your code and understand them, too. It also offers useful tools for blame, diff, merge, rebase and much more.
+vscode-icons
+
+The default icons included with Visual Studio Code are rather basic, which is why we recommend that you install an icon plugin to make the user interface more appealing and informative. One example is VS Code icons. As you can see in the screenshot below, folders and files are assigned icons that convey additional information. This enhanced visualisation helps developers to understand the function of the various folders and files at a glance, which helps increase workflow efficiency.
+
+Todo Tree
+
+This extension presents the to-dos in a clear tree structure, making editing and prioritisation much easier. By visualising to-dos, developers can better understand and sort tasks based on how important they are, which increases efficiency and productivity in the development process.
+
+Sourcery
+
+Sourcery is a VS Code extension that helps make your Python code less cluttered and easier to read. It supports you by quickly identifying parts of your code that could use edits, shows recommendations for improvements in real time and allows you to understand how new changes impact the quality of your code. This allows code to be refactored faster and more effectively and increases the quality of the source code.
+
+Rainbow CSV, CSV to Table and Excel Viewer
+
+Because data scientists and data engineers often work with comma separated values (CVS) data, it is essential that they have the right tools to efficiently edit these files. Two really great tools for this are Rainbow CSV and CSV to Table:
+Rainbow CSV
+
+Rainbow CSV improves the readability of CSV files by displaying the columns in different colours, making it much easier to recognise structures and related information within the CSV file.
+CSV
+
+CSV to Table, on the other hand, allows you to display CSV files as a table, making it easier to map the file structure. The advantage of this tool is that it eliminates the need to use external programs such as Excel, since editing can be done directly in Visual Studio Code. This makes the workflow simpler and more efficient. Excel Viewer allows you to view CSV files in a fixed structure right in Visual Studio Code, akin to how they would appear in Excel. This function streamlines the workflow since you do not need to open Excel, allowing you to use your time and resources more efficiently.
+ Black and Ruff
+
+The Black formatter is an automatic code formatting tool for the Python programming language. It is designed to make code consistent and readable through automatic formatting based on a set of defined rules. Black works according to the principle that code formatting should be less subjective and less open to debate in order to reduce the amount of discussion on stylistic preferences within development teams.
+
+Ruff is a Python linter written in Rust that is a better and faster version of Pylint. A linter is a software tool used to automatically analyse the source code of a program and identify errors, inconsistent style guides or potential problems.
+Honourable mentions
+
+The extensions listed below are great to have but are not really needed:
+
+    AWS Toolkit: This extensions supports many AWS tools such as CodeWhisperer, the AWS GitHub Copilot.
+    vscode-pdf: Required to open PDFs.
+    Yaml from Red Hat: Provides support for YAML files in VSC.
+    Docker: Suitable for Docker files and images.
+    GitHub Actions: Suitable for CI from GitHub.
+    Preview VSCode: A single viewer for all possible formats.
+    Change Case: Allows changes between camel case, snake case and so forth.
+    JSON Parse and Stringify: Makes it easy to switch between JSON and objects and is a useful tool for AWS CloudWatch logs.
+    YAML: Suitable for configuration files.

@@ -1,0 +1,35 @@
+Machine-generated text summarisation in Aleph Alpha Luminous using R: part 3
+
+
+In the third instalment of my blog series, I will use a high-level example to explain the various steps in a transformation pipeline and present the intermediate results.
+
+Test document
+
+I chose the file seen in Figure 1 as the test document. It is a social court judgement openly available to the public, with a total length of seven pages.
+
+The following table compares the results for the pages from our test document with the token count for various libraries. On the left you will see the output of the OpenAI tokeniser with and without newlines, and on the right, you will see the output of the Aleph Alpha tokeniser with and without newlines. One thing that stands out immediately is the different token totals (the pattern of embedding outputs is very different as well). They tend to be higher with Aleph Alpha than with OpenAI (tiktoken). Even text cleansing does not change much with the OpenAI library. It does, however, with the Aleph Alpha library. Since the OpenAI library encodes multiple newlines with a token, not based on the actual frequency. The opposite is true with the Aleph Alpha library. The only take-away here is that Aleph Alpha requires more explicit instructions when you are working with it.
+
+Data preprocessing 
+
+I will now explore the method used to preprocess data for the automatically generated summary. As previously described in the second part of this blog series, I would like to split the text into individual text chunks. In step one, I will clean up the text (which primarily involves removing newlines, though there could be additional steps needed here) and split it up into sentences. We can see in the screenshots below that the snippet of code I created in order to split the text up into individual sentences is prone to error, as it inserts a break after each full stop (see red slashes at the bottom right). These errors will multiply as the data undergoes further processing, which is why they have to be identified as part of an EDA (explorative data analysis) that is performed in advance. This allows you to obtain recommendations on where improvements can be made as well address and evaluate specific issues. Next, I would like to compile the final text chunks. Drawing on Isaac Tham’s approach, I will be using five ‘sentences’, each with a one sentence overlap to provide some context (see lines 84 and 85). How I do this for the entire text is illustrated starting at line 91 (it is actually quite easy, really!). For this test document, we get 16 text chunks with the specified parameters (see Figure 4 on the left). I then embed these 16 text chunks (see Figure 4 on the right). The embedding size with Aleph Alpha is 5,120.
+
+Clustering
+
+For clustering, I deploy KNN in a rather blunt manner to temporarily assist me as I seek to determine what the optimum value for k is by carrying out a silhouette analysis. I will explore better ways to do this in greater detail in a separate blog post. The silhouette analysis outputs k=2. Summaries are then created for each text chunk, which are included in the final results (see Figure 6). We see the clusters assigned to each text chunk (column 2) and the intermediate summaries (column 3) in Figure 6. The transformation for line 5 is shown below as an example.
+
+Generating a summary 
+
+We can now create the actual summary in the final step after having completed the steps outlined above. The following prompt is behind the output results shown in Figure 7:
+### Instruction: Please summarise the input in one sentence.
+### Input:{{document}}
+### Response:
+
+The prompt is relatively simple and not optimised, since the main focus here is on the transformation path. Using this prompt, I get two summaries for my k=2 clusters, that is, text chunks and intermediate summaries, which can be seen in the console in Figure 7. In the first blog post in this series, we looked at the phenomenon of ‘Lost in the Middle’ (see part 1 of the blog). Out of curiosity, I wanted to explore this topic further, this time using Aleph Alpha’s Explain function (see Figure 8). We can also see here that the final summary for cluster 1 is based exclusively on the first part of the texts that were entered. In Figure 9, I have used another prompt to create a guided summary. The key questions and the results are shown in Figure 9 (see console). 
+
+The full code can be downloaded and tested here: https://github.com/LilianDK/summarization
+
+The test document can also be found in the repo (see Figure 10 below), as can the prompts that were used (see Figure 10 (centre)). Use one of your tokens to try it out for yourself.
+
+Summary and outlook
+
+In this blog series (just to let you know, this is not a machine-generated summary), I tried to summarise the transformation path with all the issues encountered along the way to creating a machine summary. I avoided going into too much detail at this time, though we will explore the individual steps that we only touched on briefly here in the follow-up blog posts, drawing on more representative studies as we discuss them. Until then, I recommend reading ‘An Empirical Survey on Long Document Summarisation – Datasets, Models and Metrics.’, authored by Huan Yee Koh, Jiaxin Ju, Ming Liu and Shirui Pan in 2022. In my opinion, this paper is clearly written and very comprehensive. They ask the right questions and explore them with scientific rigour.

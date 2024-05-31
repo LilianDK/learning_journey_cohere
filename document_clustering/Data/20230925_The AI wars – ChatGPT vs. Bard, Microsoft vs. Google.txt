@@ -1,0 +1,44 @@
+The AI wars – ChatGPT vs. Bard, Microsoft vs. Google
+What are the AI wars?
+
+In the technological arena, Microsoft and Google are striving for dominance, something that is intrinsic to the nature of large companies. The inertia induced by cumbersome processes, checks and bureaucratic structures can be a significant barrier to achieving the speed and agility needed to compete in the dynamic world of artificial intelligence (AI).
+
+To overcome this challenge, these tech giants have acquired start-ups that specialise in AI. Google, for example, added Anthropic and DeepMind to its portfolio, while Microsoft has acquired OpenAI. The advantage of this strategy is that start-ups are able to operate with greater agility and produce breakthroughs and product releases faster than their parent companies could. However, these start-ups face the problem of funding. This is where the tech giants have a role to play by providing the financial resources the start-ups need. These massive enterprises have product lines that compete with those of their rivals as a stand-in for the companies they represent. The diagram below lays out the competitive landscape.
+
+Both Microsoft and Google offer highly popular search engines and web browsers. Google dominates the search engine space with Google Search, while Microsoft has Bing to compete against Google’s product. To challenge Google’s dominant position on the market, Microsoft is integrating GPT-4 into its search engine functions. The situation is similar on the web browser market. Google is the market leader with Chrome, while Microsoft has Edge that goes up against Chrome. Microsoft is also looking to integrate GPT-4 into Edge as a way of providing a web copilot feature, similar to GitHub Copilot for programming.
+
+A similar pattern is also to be seen when it comes to office software suites and AI applications. In these two areas, Microsoft is seeking to upgrade its products by integrating advanced AI technologies such as GPT-4 to challenge Google’s dominance. This strategy highlights the growing rivalry between these tech giants and the role that artificial intelligence plays in shaping their product strategies and defining their market position. It also illustrates how the integration of AI into core products is seen as a way to gain an edge on the marketplace and challenge current market leaders.
+
+This leads to a product development cycle in which companies integrate advanced AI technologies into their products to improve their performance and user experience. These then gain market acceptance and attract more users. In the digital world, one of the main things end users do when they use a product is generate data.
+
+As the products gain more and more users, they generate vast amounts of data from them, which can then be used to further improve the AI models. AI models can use the collected data to make further improvements and upgrades, leading to even more powerful products. The enhanced products attract even more users, which leads to even more data and accelerates the development cycle.
+
+It is therefore vital from a strategic perspective for tech giants such as Microsoft and Google to dominate in ‘non-core’ areas. They are able to gain a direct competitive edge by having a product that is optimised using big data. In a market where there can increasingly be only one winner, the quality of data-driven product upgrades is a critical factor for success.
+
+The barriers to entry for competitors increase exponentially with the quality and quantity of data that a company is able to deploy to optimise its products and services. In this context, data-driven product improvements are a key tool to keep out competitors, which in turn bolsters a company’s position on the market and ensures its long-term success.
+
+The diagram further down on the page demonstrates the way in which the process may work between a large company and a start-up in the AI space. It describes the continuous cycle of investment, innovation and improvement that ultimately helps strengthen the position of both parties on the market.
+
+When large companies provide funding to start-ups, what they get in return is access to innovative AI solutions and enhanced models. They can then integrate these advanced technologies into their products and services, resulting in higher quality products that attract more and more users to them.
+
+The expanded user base generates additional revenue as well as a wealth of data for the large company. This can then be sent back to the start-up to drive further improvements and innovation. This constant cycle of investment, innovation and improvement creates a symbiotic relationship that enables both the large tech company and the start-up to continue to grow and strengthen their market position. This further underscores the strategic importance of large companies and start-ups working together in the fast-moving world of AI.
+
+The AI wars – where we stand now
+
+Oddly enough, the release of BingGPT has not put a major dent in Google’s market share. At the moment, this could be down to the fact that AI-powered search is not yet fully developed, along with the known challenges associated with the technology. Most importantly, AI-driven search struggles with issues like hallucinations, a phenomenon whereby the AI model generates information that is not found in the underlying data. This highlights the complexity and current challenges in the field of AI-driven search engines, issues that have yet to be overcome despite remarkable advances in the technology. Considering all that, it is clear to see why Google’s dominant position on the market remains more or less intact despite the launch of advanced AI-driven search engines such as BingGPT. This further demonstrates the need for continued research and development in this field in order to improve the efficiency and accuracy of AI-driven search engines.
+
+In addition to Microsoft and Google, there are other major players who could potentially play an increasingly important role in the AI sector in the coming years. One of them is Amazon, who has its own AI platform called Titan Bedrock AI. While not many people may know this, Amazon Web Services (AWS) has the largest market share in the cloud computing segment. When it comes time for a company to choose a provider, one of the key factors in their decision is whether or not they will be able to integrate a technology solution into their existing environment. Because AWS’ solutions can be seamlessly integrated, this has the potential to give it a major advantage over its competitors. And thanks to Amazon’s close partnership with HuggingFace, a platform for open-source large language models (LLMs), it is also much easier to deploy and use open-source models on AWS, thus enabling companies to efficiently use AI technology on the platform.
+
+Another notable player is Apple. The company recently announced plans to treble the capacity of its data centres by the end of the year, which could indicate that Apple is looking to establish a stronger foothold in the AI market. With AppleGPT, Apple already has its own large language model.
+
+Last but not least, there is Facebook/Meta. Meta recently launched Llama 2, a foundation language model that is offered with a commercial licence and is available for free as the best open-source model. This move underscores Meta’s commitment to AI and its role as a major player in this space.
+
+Outlook
+
+As we look forward to the future of AI, it is hard not to notice how dynamic the field is. Tech giants such as Google, Microsoft, Amazon, Apple and Meta are taking bolder steps in the development and use of AI technologies to improve their products and expand their position on the market.
+
+By all appearances, the integration of AI into core products and services is becoming a key competitive advantage. The battle to achieve supremacy in AI is undoubtedly gaining in intensity. Companies like Microsoft that integrate GPT-4 into their search engines, web browsers and office suites are beginning to challenge Google’s dominance.
+
+But it is not only the well-established tech giants that dominate the space. One should not overlook the role of start-ups and open-source platforms in the AI landscape. The innovations and contributions they make play a crucial role in shaping the future of AI.
+
+In summary, we are at the precipice of an exciting new era in which AI technologies will play an ever-increasing role in shaping our daily lives. Whether in search engines, web browsers or office suites, AI integration will continue to change and improve the way we interact and work. The future of AI will undoubtedly deliver a number of surprises and new innovations.

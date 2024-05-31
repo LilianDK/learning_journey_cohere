@@ -1,0 +1,83 @@
+Stack Overflow Developer Survey 2022 – Part 2
+
+In the first part of our post, we clarified the question of what exactly the Stack Overflow Developer Survey is and asked about what education developers have, how long they have been working or how they like to learn. This part is about the most popular programming languages, tools and technologies used, as well as different opinions about the future of software development.
+
+We summarise the most important results and trends of the survey and give you an insight into the current state of the software development industry. 
+HyperText Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript are often the first languages beginners learn for various reasons:
+
+    They are essential for creating websites and web applications.
+    They are easy to learn – especially compared to other programming languages.
+    There are many online resources to help beginners learn these languages, including tutorials, courses and documentation.
+    The demand for these languages is high, so learning these skills can lead to employment opportunities in the tech sector.
+    HTML is the basic building block for creating websites. It is used to structure and organise web content, such as text, images and videos.
+    CSS is used for the design and layout of webpages. It controls things such as font size, colour and the position of elements on the page.
+    JavaScript is a programming language used to make websites interactive. It allows you to create things such as animations, forms and games that can be run in a web browser. 
+
+All in all, learning HTML, CSS and JavaScript provides a solid basis for creating websites and web applications and is a good starting point for anyone interested in a career in the tech sector.
+
+
+Interestingly, JavaScript is the most popular language for professional developers, followed closely by HTML/CSS, which are web technologies for building websites. They are generally only used in web applications and less so for AI or backend applications. However, they are followed closely by SQL and Python, which are languages that are primarily used for AI, the cloud and data engineering.
+
+When comparing beginners to professional developers, it is interesting to note that for many beginners, the C/C++ languages are very popular, whereas for professional developers, it does not appear among the more popular programming languages at all. Instead, you can find the languages TypeScript and C# in the list – which makes sense, particularly because these languages are very important for production applications these days.
+
+TypeScript is an enhancement for JavaScript that allows code to be written in a more powerful language, which is then translated into JavaScript. C# is a backend language comparable to Java.
+Most popular web framework
+
+Most popular web frameworks for new coders and professional developers:
+
+
+Node.js and React.js are the most popular web technologies among both professional developers and beginner programmers.
+
+Interestingly, Django and Flask, which are frontend frameworks for Python, appear among the beginner coders. Python is a very popular language for beginners and professional developers, as was already pointed out in the previous blog post. However, with python, the intended use for professional developers does not seem to be frontend development. This makes sense, as Python is rarely used on the web. ASP.NET, a frontend framework from Microsoft, is also only popular among professional developers. This illustrates a clear trend among beginners towards learning JavaScript-based technologies and Python. This matches up perfectly with the popularity of HTML, CSS, JavaScript and Python among developers as established above.
+The most popular technologies
+
+The most commonly used version control technology is Git. Git is a version control system that enables developers to track software projects and work on them together. It allows them to store different versions of their code, called ‘commits’, and easily switch between them or revert to earlier versions. Git also has features for managing branches and pull requests that allow developers to work on separate versions of the code and collaborate on code reviews. Git is widely used in the software industry and is available for all major operating systems. Before Git, SVN was the undisputed go-to, but it seems to have been almost completely replaced. It is also nice to see that only 4.3 per cent of developers do not use version control, as version control is essential for good development and should never be neglected when developing.
+
+
+The command line is a highly effective and efficient way to work with Git and is preferred by many users due to several important advantages. The following reasons explain why:
+
+    First, the command line allows users to execute Git commands quickly and efficiently. With a graphical user interface, users often have to click through multiple menus and dialogue fields to perform a task, which can be very time-consuming. In the command line, however, users are able to enter the commands directly and immediately execute them. This can mean significant savings in terms of time and labour, especially when working with large projects or performing frequent Git operations.
+    Second, the command line via Git offers more control and flexibility. Many advanced Git features, such as user-defined integration strategies and revision selection, are only available via the command line. This allows users who are familiar with the command line to customise their Git workflow and capitalise on these advanced features.
+    Third, the command line is often more reliable than graphical user interfaces. GUI tools can sometimes have bugs or glitches that prevent them from working properly, whereas the command line is a more stable and consistent way to interact with Git. This can be especially important when working on critical projects or in environments where downtime or data loss is unacceptable.
+
+Lastly, many developers and other technical professionals are familiar with the command line and know its syntax and conventions. The command line is a natural and intuitive way for these users to work with Git and other tools. All in all, the command line is a popular choice for interacting with Git due to its speed, control, flexibility, reliability and familiarity.
+Version control platforms
+
+
+There are number of reasons why GitHub is used more frequently than GitLab or Bitbucket. One reason is that GitHub has a longer history and has already been around longer than GitLab or Bitbucket. This means that GitHub has had more time to build a large user base and a reputation as a reliable platform packed with features.
+
+Another reason is that GitHub boasts an incredibly intuitive and user-friendly interface that makes it easy for users to get started with the platform and learn it. On top of that, it offers a wide range of tools and features for managing and collaborating on projects, which makes it particularly suitable for software development projects. Lastly, GitHub has a large and active user community, which means there are a lot of resources available to learn how to use the platform and fix any problems that might come up. This can be particularly helpful for users who are new to version control or just getting started with GitHub.
+
+All things considered, with its long history, user-friendly interface and numerous features, GitHub is the first choice for many software development teams and individual developers. While GitHub is popular among both companies and individual developers, companies actually use GitLab and Bitbucket more often. There are a few reasons for this:
+
+    Both GitLab and Bitbucket offer options for private repositories, which can be important for companies that want to protect their code base and intellectual property. GitHub also offers options for private repositories, but they tend to be more expensive than what GitLab and Bitbucket offer.
+    GitLab and Bitbucket offer project management and collaboration tools that are more comprehensive, including features such as integrated continuous integration and deployment, issue tracking and project management. These tools can be particularly useful for companies with large and complex projects.
+    Both GitLab and Bitbucket offer plans that come with additional features and support options that larger companies may be interested in.
+
+All in all, companies prefer GitLab and Bitbucket because they offer a more comprehensive set of tools and features for managing and collaborating on projects, as well as options for private repositories and plans that come with additional features. On top of that, GitLab can be hosted locally – that is, on the company’s own servers – whereas doing so with Bitbucket and GitHub is not possible.
+How often do developers search on Stack Overflow?
+
+
+A large majority of those surveyed visit Stack Overflow regularly. Specifically, 81 per cent of respondents said they visit Stack Overflow at least once a week. Fifty-three per cent of respondents said they visit the website daily. These figures show how important Stack Overflow is as a resource for developers, as it provides a wealth of information and helps developers solve problems and find answers to their questions. Whether you are a seasoned professional or just beginning your career, Stack Overflow is an indispensable tool for staying up to date and learning new skills. Its popularity among developers is a testament to its value as a resource, and it is likely to remain a popular destination for developers in the years to come.
+Employment relationship and work environment
+
+
+There are a number of factors that could contribute to the reality that a greater percentage of programmers are permanently employed than they are freelancers. Some possible reasons for this could include:
+
+    Job security: A lot of people value the security and stability of full-time employment, most notably when it entails benefits such as health insurance and an occupational pension scheme.
+    Constant workload: A full-time job often offers a steady workload that is more predictable and easier to manage than the unpredictable workload freelancers have.
+    Occupational development: Many companies offer their employees professional development opportunities and support, which can be beneficial for programmers who want to advance their skills and career.
+    Customer acquisition and management: Freelancers often have to spend a lot of time and effort in order to find and manage clients – tasks which can also be just as time-consuming and require the same high level of effort.
+    Tax and social benefits: As a freelancer, you may be responsible for paying your own taxes and covering your own benefits, which can be a burden for some people.
+
+Coding as a hobby
+For a lot of programmers, programming in their free time is not uncommon, as many of them are passionate about it and want to further improve their skills. The fact that a large percentage of developers also participate in open-source projects is interesting as well and shows that many programmers are happy to use their skills for the benefit of the community.
+
+It is also not surprising that some developers do freelance or contract work in their spare time, as these opportunities offer flexible working hours and the chance to use their skills and make money with them. It is important to note that these figures only represent a fraction of all programmers and there is no general rule for how they spend their free time. Every developer has their own interests and goals.
+Summary
+
+All things considered, the Stack Overflow Developer Survey 2022 once again provides interesting insights into the work models and preferences of developers throughout the entire world. It is interesting to see that certain technologies and tools are still very popular, while others are becoming more popular or losing popularity. The results of the survey also show that great significance continues to be attached to developers’ working conditions and work environments.
+
+It is important that companies and organisations consider the results of the Stack Overflow Developer Survey and make a point to address them in order to understand and support the needs and preferences of their developer teams. By incorporating developers’ feedback and perspectives, companies can improve their ability to attract and retain the best talent and create a productive, innovative work environment.
+
+The Stack Overflow Developer Survey is a valuable resource for anyone interested in and wanting to better understand how developers work. We are looking forward to the results of the upcoming survey and to gaining more insights into the world of developers.

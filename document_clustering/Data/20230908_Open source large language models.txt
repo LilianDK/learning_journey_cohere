@@ -1,0 +1,54 @@
+Open source large language models
+
+In this blog post, I would like to take an in-depth look at open source large language models. I usually focus on proprietary models like OpenAI’s GPT-4 or Aleph Alpha’s Luminous in my posts. Despite the fact that these companies provide an extensive amount of open source software and models, today I would like to focus on models that are purely open source. In this context, I will introduce you to three important models and will show you why open-source language models are so important.
+What is open source?
+
+Open source is an influential technology concept based on free access of and the ability to modify software source code. It promotes collaboration, continuous improvement and knowledge sharing. Historical projects such as Linux and Apache have influenced the development of technology and are important components of modern systems. The philosophy behind open source is that joint efforts and transparency result in superior solutions. This approach is not limited to software, but also extends to hardware, data and science, thus contributing to the democratisation of technology and knowledge.
+
+Open source is an indispensable tool in today’s research and development landscape as it allows everyone to build on the existing state of the art. This gives developers the opportunity to create innovative applications or make significant improvements without being forced to redesign previously established concepts. The open source philosophy opens up access to AI technologies to a diverse community of developers and companies, regardless of how big they are or what financial resources they have. This democratisation of access to advanced technologies is a core tenet of the open source principle. Another key aspect of open source projects is transparency. By providing the source code and training data, a thorough investigation of the operating principle as well as potential biases of an AI model is made possible. This contributes to increased understanding and promotes trust in such technologies.
+Benchmarks
+
+It is very important to establish which model is best suited for which purpose. The means of choice here are benchmarks from independent providers. These have taken on the task of evaluating large language models on the basis of data sets, which enables an objective comparison of the models.
+
+First off, I would like to introduce Hugging Face’s OpenLLM Leaderboard. Hugging Face is a French-American company specialising in democratising access to AI for natural language processing. You can view the leaderboard on the website of OpenLLM Leaderboard ↗. However, you should be aware that this leaderboard only considers open source models, so it does not include commercial providers such as Aleph Alpha, Anthropic and OpenAI.
+In addition, I would like to refer to Stanford’s Holistic Evaluation of Language Models (HELM) benchmark, which provides a comprehensive evaluation of language models. You can take a look at the benchmark here: HELM Benchmark. The Chatboat Arena by LMSYS (the inventors of the Vicuna model) is also worth mentioning. It allows users to compare chatbots based on an Elo system. For more information, visit this website https://chat.lmsys.org/?arena and https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard.
+
+Models
+
+In this section, I will discuss three key models in terms of their history and capabilities. Foundation models are large language models that train using extensive, mostly unlabelled data and thus acquire ‘world knowledge’ that is useful for many applications. In contrast, fine-tuned models are specifically tailored to particular tasks or users, often by drawing on smaller but more extensively labelled data sets. One example is ChatGPT, which uses the RLHF (Reinforcement Learning on Human Feedback) technique. The choice between a foundation model and a fine-tuned model depends on the use case.
+
+The diagram below shows that research is divided between the development of foundation language models (base LLMs) and fine-tuning these. Foundation models usually come from large companies and institutions as training them costs several million euros. Fine-tuning is cheaper and therefore popular, but commercial use of many foundation models is often not possible due to a lack of licences, as is the case with LLama1.
+
+ BLOOM
+
+BLOOM, a project by Hugging Face, represents the world’s largest open-source multilingual language model. This transformative large language model, officially known as the BigScience Large Open-science Open-access Multilingual language model (BLOOM), was created through the collaboration of more than 1,000 AI researchers at the Big Science Research Workshop. The main objective of this workshop was to develop a comprehensive language model and make it available to the general public free of charge.
+
+BLOOM, which was trained between March and July 2022 with about 366 billion tokens, presents itself as a compelling alternative to OpenAI’s GPT-3. It stands out with its 176 billion parameters and uses a pure decoder–transformer model architecture modified on the basis of the Megatron-LM GPT-2 model. Read this blog post for more detailed information.
+
+The BLOOM project was started by one of the co-founders of Hugging Face and involved six main participants:
+
+    The BigScience team at Hugging Face,
+    the Microsoft DeepSpeed team,
+    the NVIDIA Megatron LM team,
+    the IDRIS/GENCI team,
+    the PyTorch team and
+    the volunteers of the BigScience Engineering task group.
+
+The training data for BLOOM included material from 46 natural languages and 13 programming languages, with a total of 1.6 terabytes of pre-processed text having been converted into 366 billion tokens. Although BLOOM’s performance is quite respectable compared to other open source large language models (LLMs), newer and proprietary models such as Aleph Alpha or OpenAI display another level of quality.
+Llama/Llama v2
+
+The release of the Llama model by Meta AI (formerly Facebook) in February 2023 caused a considerable stir in the AI community. This language model, developed by the Facebook AI Research (FAIR) department led by Yann LeCun, is an autoregressive model similar to Bloom. One of the most remarkable features of Llama is its superior performance compared to other language models, even though they are more than twice as large. This is mainly due to its longer training time. However, the release of Llama was overshadowed by its licensing conditions.
+
+Although presented as an open source project, the licence explicitly prohibits the use of the architecture or model weights for production or commercial purposes. This also applies to all Llama-based research projects, such as Vicuna, which also cannot be used commercially. The decision to restrict Llama’s licence may be related to the experience made after the release of Galatica, an earlier language model from Facebook. Galatica was released in open source, but some actors from the AI ethics scene used problematic answers from the model to provoke public controversy, after which the model was withdrawn again. It is important to emphasise that models such as Llama or ChatGPT are not truth machines – instead, they are word prediction models. Despite these challenges, Llama has made a significant impact on the AI community. It has created a wave of enthusiasm in the open source community and serves as the basis for many projects, such as GPT4All.
+
+In July 2023, the updated version Llama v2 was released under a licence that allows commercial use. This is seen by some as an attempt by Meta to challenge OpenAI’s dominant position in the chat model arena. Llama v2 expands the volume of data and training, which is in line with the trend towards more and higher quality data for better models. However, it should be noted that this licence is also restricted, as it is only valid for applications with up to 700 million monthly active users. Currently, Llama v2 is the best open source language model there is.
+
+This is underscored by the extensive open source ecosystem Llama has spawned, including projects such as OpenLlama(Fully-OSS), Vicuna(Instruction) and Llama.c(Edge). This variety of use cases shows the versatility and impressive possibilities of Llama.
+Falcon
+
+The Technology Innovation Institute (TII) of the United Arab Emirates published Falcon LLM in March 2023. It is a comprehensive and open language model that can be used for research and commercial purposes. Unlike many other models, Falcon LLM is fully open source, enabling a wide range of application scenarios. Falcon LLM has been released in several versions, including a model with seven billion parameters and a so-called instruction model. The instruction model is specifically designed to follow instructions. For example, it could be configured to speak only JSON to ensure optimal output for data processing. Thanks to these customisation options, users can significantly control and improve the performance of the model. In addition to the seven billion parameter version, TII has also released a version with 40 billion parameters. Here, too, a standard and an instruction version are available.
+
+The Falcon LLM model was released under the Apache License version 2.0, which allows commercial use. A distinctive feature of Falcon LLM is the extensive, carefully curated dataset on which it has been trained: RefinedWeb. This dataset was created specifically for the Falcon project and contains a significantly higher proportion of high-quality text than typical datasets. This allows Falcon LLM to outperform many other models that have not been trained on such high-quality data. Until the release of LLama v2, Falcon LLM topped all leaderboards for open source LLMs.
+Outlook
+
+Two relevant publications discuss the challenges of open source models. A Google engineering document postulates that commercial providers can hardly hold their own against open source models. Nevertheless, OpenAI’s GPT-4 is still in the lead, although open source models are catching up. Another problem could be the EU’s AI Act, which lays down strict rules for foundation models. The paper ‘The False Promise of Imitating Proprietary LLMs’ shows that smaller LLMs trained on proprietary models like GPT-4 have difficulties with generalisation. The progress in open source LLMs is still impressive. Open source is therefore an important contribution to democratising AI and shaping an inclusive digital future.

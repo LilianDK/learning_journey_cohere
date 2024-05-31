@@ -1,0 +1,47 @@
+AI roulette – a rough guide to AI applications that are allowed and those that are not
+
+The European Union’s proposed AI Act will make working with artificial intelligence (AI) on a daily basis even more complex. Some potential AI applications might end up on a blacklist, while others remain untouched, but in a way, both applications use the same technology. It feels like AI roulette. The entire situation is poised to cause doubts during the idea phase of potential AI applications – namely, is my AI idea allowed? This is a question that crops up a lot at the moment. Customers often ask my colleagues whether we cannot just provide them with a classification system or guidance system. Building on the years of valuable preparatory work and the wealth of experience of Accenture, Daugherty and Wilson, Human + Machine and Artificial Intelligence and the Future of Work, among others, we at adesso have enriched the structure with the latest developments, namely the component of AI regulation in the form of the European Artificial Intelligence Act (EU AI Act).
+Components of AI
+
+In their book ‘Human + Machine’, Paul Daugherty and James Wilson have divided AI technologies into three components with regard to their operational applications:
+Machine learning (ML)
+
+The first component relates to machine learning (ML) – which you can see in the inner circle of the graph below. ML is a branch of computer science that deals with algorithms that can learn from data and draw conclusions about relationships without being explicitly programmed to do so. Four different learning strategies can be distinguished with regard to learning:
+
+    Supervised learning
+    Unsupervised learning
+    Semi-supervised learning
+    Reinforcement learning
+
+In addition, a coarser division can also be made that makes deep learning (neural network) in particular stand out, which is supposed to resemble a biological nervous system in terms of processing information. Everything that does not correspond to deep learning is subsumed under shallow learning.
+AI capabilities
+
+The second component relates to AI capabilities – which you can see in the middle circle of the graph. For example, today’s groundbreaking applications in the processing of unstructured data in image and language processing owe much to the deep learning approach. These enable the machine execution of capabilities such as computer vision, natural language processing or audio signal processing. Processing with data in tables enables capabilities related to predictive systems or optimisation.
+Areas of application with AI
+
+The third component comprises application areas with AI – which you can see in the second circle from the outside. For example, the natural language processing skills acquired can be used to develop intelligent agents or collaborative robots. Large language models or models subsumed as fundamental models, which are trained in a general manner using very large amounts of data and thus provide general knowledge of the world, have been particularly prominent. This in turn can be used for various applications.
+
+AI technologies and their operational applications according to Daugherty & Wilson, 2018. Expanded diagram with added dimensions of the EU AI Act (ensemble models not considered)
+Influence of the EU AI Act on AI components
+
+The European Union’s AI Act will primarily address the risks arising from the use of artificial intelligence in certain scenarios (see the outer circle of the graphic). This concerns systems in the area of internal and external security (see green-bordered boxes). This includes:
+
+    Real-time biometric analysis, which is mainly based on computer vision applications (EU AI Act, Annex III, 1).
+    Law enforcement, which can be realised by computer vision, speech processing or by evaluating data in tables (EU AI Act, Annex III, 6).
+    The administration of justice or democratic processes, which are likely to be realised mainly through language processing (EU AI Act, Annex III, 8).
+    Border checks, which are presumably often carried out with computer vision or evaluations of data in tables (EU AI Act, Annex III, 7).
+
+There are other scenarios in areas of commercial use (see boxes outlined in red), which often arise with dedicated decision-making systems. These include:
+
+    The management of critical infrastructures with security components (EU AI Act, Annex III, 2).
+    The accessibility of essential services (EU AI Act, Annex III, 5).
+    The application to control, select or incentivise employees (EU AI Act, Annex III, 5).
+
+In addition, applications on training opportunities or access (EU AI Act, Annex III, 3) and fundamental models (Article 28b) are affected as such by the EU AI Act (see orange-bordered boxes).
+Outlook
+
+The proposed EU AI Act means it is more important than ever to understand the different aspects of AI beyond mere technological feasibility and its implications. The AI Act will primarily address the risks associated with the use of AI in certain scenarios. It is crucial to identify these risks early on and navigate them wisely accordingly to ensure that AI ideas are not doomed to failure from the start.
+
+The AI roulette I have described may seem scary, but it is not a game of chance. By applying prevention tactics, knowledge and the right focus, we can ensure that your AI projects not only meet the criteria set out in the AI Act, but are also truly innovative and beneficial for society, for your company or even for your employees. Ultimately, it is not only about luck, but also about knowledge and strategic action.
+
+On our website you will find everything about the AI activities at adesso. Learn more about how AI can help you in your daily work and what solutions our experts have for you.

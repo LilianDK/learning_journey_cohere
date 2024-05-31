@@ -1,0 +1,105 @@
+Python development best practices part 1 – Tools & Zen
+
+In this blog post, we would like to present our best practices for Python development. Python, one of the most widely used programming languages in the world, offers a wide range of possibilities to implement solutions in a professional and efficient way. However, to fully exploit the potential of Python, it is crucial to understand and apply the relevant best practices. Best practices are proven procedures that have demonstrated to be particularly effective and productive in software development. They serve as a guide to create readable, manageable and optimised code. As such, they help programmers avoid errors while also promoting a consistent and high-quality code base.
+What are best practices?
+
+Best practices are guidelines and recommendations that have emerged from many years of experience and knowledge in a specific field – in this case software development. They represent the most effective and productive methods to accomplish tasks in a consistent manner that generates high-quality results. In software development, best practices refer to techniques, patterns and styles that help make code more secure, readable, manageable and efficient. They represent the gold standard, so to speak, that programmers can use as a guide to produce excellent software. Some best practices are valid across languages, such as following certain style guides or writing unit tests. Others are specific to a particular programming language, like the Pythonic ways of doing things in Python.
+
+It is important to note that best practices should not be seen as rigid rules to be applied in every context. Instead, they serve as guidelines that can help make informed decisions and avoid common mistakes. There may be situations where deviating from a best practice is justified, provided the decision is made consciously and after careful consideration.
+
+In the following, we would like to introduce you to our tools for best practices, code quality and developing code in Python.
+pyenv
+
+
+pyenv is an independent tool for Python version management. It allows developers to install multiple Python versions on the same system and switch between them. For example, with pyenv you can use Python 3.10 for one project and Python 3.12 for another without generating conflicts between the two versions. pyenv provides a simple and intuitive command interface for installing, uninstalling, switching and managing Python versions. It also allows you to configure one python version per directory (via a .python version file) or per shell session. pyenv is a cross-platform solution that supports most Unix-style operating systems, including Linux and macOS. For Windows users, there is an alternative implementation called pyenv-win.
+
+We prefer pyenv over Anaconda, as it is much more slimmed down and offers a much wider choice of Python versions. Moreover, pyenv does not clash with the Python system, which may well happen with Anaconda.
+
+Check out these links for more information on pyenv:
+
+    https://github.com/pyenv/pyenv
+    https://github.com/pyenv/pyenv-virtualenv
+
+Poetry
+
+
+Poetry is a tool for managing Python projects and dependencies. It was developed to simplify and improve packaging, publishing and dependency management in Python.
+
+Poetry lets you create new projects, add and manage dependencies, publish your projects and do many other tasks, all in a single, consistent interface.
+
+How does Poetry work?
+
+Poetry uses the pyproject.toml file to store the configuration and dependencies of your project. This is a standardised format introduced by PEP 518 that aims to unify the way Python projects are managed.
+
+When you add a dependency to your project, Poetry updates the pyproject.toml file and creates or updates a poetry.lock file. This lock file is used to ensure that your dependencies are consistent and that your project runs with the same versions of the dependencies on different systems and by different developers. Storing hash values allows users to detect changes to the dependencies that mistakenly register under the same version number. This method increases the security and reliability of software packages by ensuring a constant match between the expected and the actually used version of the dependency.
+
+Poetry provides consistent and reproducible dependency management which ensures that only the specified packages from trusted sources are installed, significantly reducing the risk of a ‘package confusion’ attack.
+
+Poetry can also create and manage virtual environments for your projects, so you do not have to use virtualenv or similar tools yourself.
+
+There are many reasons to opt for Poetry to manage your Python projects:
+
+    1. Simple management of dependencies: With Poetry, dependencies can be added, updated or removed with a single command. The tool also takes care of resolving dependencies and ensures that you do not have inconsistent or incompatible versions of packages.
+    2. Simple publication of packages: Poetry makes it easy to publish projects on PyPI or other package indexes. It can create all the necessary files and upload a package with a single command.
+    3. Management of virtual environments: Poetry can automatically create and manage virtual project environments. You do not have to worry about using virtualenv or similar tools.
+    4. Consistency and reproducibility: By using the pyproject.toml and poetry.lock files, Poetry ensures that projects are consistent and reproducible. You can be sure that a project will run exactly the same on different systems or by different developers.
+
+Overall, Poetry is a powerful and flexible tool that simplifies and improves many aspects of Python project management. It is an excellent choice for Python developers who want to increase their efficiency and productivity.
+
+Click these links for more information on Poetry:
+
+    https://python-poetry.org/
+    https://github.com/python-poetry/poetry
+
+pre-commit
+
+
+pre-commit is a Git hook framework for managing and maintaining pre-commit hooks. Git hooks are scripts that are executed before or after events such as commit, push and others. These hooks are used to automate tasks that normally have to be performed manually.
+
+How does pre-commit work?
+
+pre-commit works by reading a project configuration file (usually pre-commit-config.yaml) that specifies which hooks are to be used in the project.
+
+In this context, a hook is a script or tool that is executed before each commit. These hooks can perform a variety of tasks, such as checking the code style (drawing on tools like flake8 or black), searching for syntax errors, performing static code analyses or even running tests.
+
+Whenever you try to perform a commit, pre-commit will execute the appropriate hooks. If a hook fails, for example, if flake8 detects a style error, the commit is aborted and you are informed about the issue.
+
+There are several reasons why programmers should integrate pre-commit into the development process:
+
+    1. Automated code quality check: With pre-commit, you can ensure that every commit meets your quality standards without having to manually run tools every time.
+    2. Avoiding errors: Because pre-commit hooks are executed before the actual commit, they can help prevent bugs from getting into the code in the first place. This can help improve code quality and reduce the time needed for troubleshooting.
+    3. Consistent code: Tools like black or isort can be used as pre-commit hooks to ensure a consistent code style in your project.
+    4. Integration into the development process: pre-commit can be integrated into existing development tools and processes, including continuous integration systems.
+
+pre-commit is a powerful tool that can help improve code quality and speed up the development process. It is flexible and customisable and can support a variety of hooks and tools, making it a valuable helper for any Python project.
+
+    https://pre-commit.com/
+    https://github.com/pre-commit/pre-commit
+
+The Zen of Python – Guiding principles for Python development
+The ‘Zen of Python’ is a collection of 19 ‘aphorisms’, or principles, that serve as a guide to writing computer programs that reflect the Python philosophy. Tim Peters, a long-time and eminent Python developer, is the author of these principles. They can be accessed in Python itself by typing ‘import this’ in a Python interpreter.
+
+Here are the 19 aphorisms:
+
+    1. Beautiful is better than ugly: This means to stress the importance of aesthetics in coding. A beautiful code is easier to read and understand.
+    2. Explicit is better than implicit: Code should be clear and direct. Hidden meanings or tricks make the code difficult to understand and maintain.
+    3. Simple is better than complex: If there is a simple solution to a problem, use it instead of a more complex one.
+    4. Complex is better than complicated: Complexity is inevitable in some problems, but the code should never be unnecessarily complicated.
+    5. Flat is better than nested: Deeply nested structures can be difficult to understand. As a general rule, flat structures are preferable.
+    6. Clarity matters: Creating comprehensible code is extremely important as it needs to be read and understood by people.
+    7. Special cases are not special enough to break the rules: It is better to remain consistent and stick to the rules instead of making exceptions for certain special cases.
+    8. Yet practical solutions beat purity: Solutions that ‘get the job done’ are often better than theoretically ‘perfect’ solutions.
+    9. Mistakes should never happen in silence: Proper error handling is important, and errors should never be ignored or remain unnoticed.
+    10. Unless they are silenced explicitly: It is okay to ignore mistakes if this is a conscious and explicit choice.
+    11. Refuse to guess in the face of ambiguity: If something is not clear, code should never attempt to elicit the meaning by guessing.
+    12. There should be one – and preferably only one – obvious way to do it: It is better to stick with one obvious way of doing things rather than using multiple ways, which can cause confusion.
+    13. Although this possibility may not be obvious, unless you are Dutch: A humorous allusion to Dutchman Guido van Rossum, creator of Python.
+    14. Now is better than never: It is better to do something than to keep putting it off.
+    15. Even though never is often better than right now: However, sometimes it is better not to do something, especially if it is done hastily and without proper contemplation.
+    16. If the implementation is difficult to explain, it is a bad idea: Good code should be self-explanatory.
+    17. If the implementation is easy to explain, it could be a good idea: If a solution is easy to explain, it is probably good.
+    18. Namespaces are a great idea – let us create more of them!: Namespaces help keep code clean and organised by preventing name collisions.
+
+These principles are not set in stone, but they provide a helpful guide to writing code that is readable, understandable and easy to maintain.
+
+In the next part of our blog post, we will look at typing, Pydantic and other important best practices for data engineering and AI.

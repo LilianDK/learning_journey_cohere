@@ -1,0 +1,62 @@
+Prefect - Workflow orchestration for AI and data engineering projects
+
+Workflow orchestration and workflow engines are crucial components in modern data processing and software development, especially in the field of artificial intelligence (AI). These technologies make it possible to efficiently manage and coordinate various tasks and processes within complex data pipelines. In this blog post, we present Prefect, an intuitive tool for orchestrating workflows in AI development.
+Workflow orchestration?
+
+Workflow orchestration refers to the coordinated execution of various tasks and processes within a data pipeline. In AI development, where large data sets need to be processed, models trained and results analysed, workflow orchestration ensures that these processes run smoothly and efficiently. Workflow engines are software tools that enable workflow orchestration. They enable developers to define, manage and monitor complex workflows. A workflow engine ensures that the defined tasks are executed in the correct order and taking dependencies into account. It also takes on the task of allocating resources efficiently and reacting appropriately in the event of errors. Examples of such tools are Apache Airflow, Prefect and Dagster.
+
+How Prefect works
+
+A workflow in Prefect is referred to as a "flow", which always consists of a series of "tasks". These tasks are the basic building blocks of a workflow and represent individual executable actions, such as retrieving data, processing it or saving results. Each task can have inputs and outputs. The dependencies between the tasks are clearly defined in Prefect to control the execution sequence. As these tasks are always defined as atomically as possible or only as a self-contained task, they can be parallelised very well with the parallelisation options in Prefect, such as the DaskTaskRunner. This makes it possible to design the speed and efficiency of data pipelines very efficiently and cost-effectively, although this is usually not as efficient in Python as in other programming languages such as Go.
+
+Prefect differs from other workflow management tools in its robust error handling and ability to deal with unexpected problems. Prefect has an integrated system for tracking the status of workflows and tasks. This makes it possible to respond to, diagnose and resolve errors without having to restart the entire process.
+
+Prefect agents are processes for monitoring and managing the execution of workflows. Agents can be executed on local computers or in the cloud.
+
+Prefect offers different types of agents, for example
+
+    Local Agent: The Local Agent is executed on the local computer and is ideal for developing and testing workflows.
+    Remote Agent: The Remote Agent is executed on another computer and can be used to execute workflows in the cloud or on another server.
+    Kubernetes Agent: The Kubernetes Agent enables the execution of workflows on a Kubernetes cluster.
+
+There are also other tools in the Prefect ecosystem such as CLI applications for monitoring and controlling workflows, UI tools such as the dashboard shown above and other useful tools.
+
+Prefect OSS and Prefect Cloud
+
+The great thing about Prefect is that there is both an open-source and a cloud version. This makes it possible to run Prefect completely on-prem, but also to utilise the extended capabilities and options of the cloud version. We tried out the open-source version for a small pro bono project and were able to use it to build a small and efficient data pipeline. For larger projects, however, we recommend taking a look at the cloud version, as it offers significantly more options and considerably more "ease-of-life" features such as authentication, automation and support. In short, our recommendation is
+
+Prefect Open Source is ideal for
+
+    Teams that need maximum flexibility and control
+    Teams with a limited budget and/or
+    Developers who understand how Prefect works and would like to contribute to the further development of the platform.
+
+Prefect Cloud is ideal for
+
+    Teams looking for a convenient and scalable solution,
+    Teams that require additional functions that are not available in the open-source version and/or
+    Teams that require support from the Prefect Team.
+
+Comparison with Airflow
+
+Both platforms - Perfect and Airflow - allow users to define dependencies between tasks and provide scheduling and trigger functions to execute these tasks regularly or in response to external events.
+
+Although these platforms are similar in their basic approach, there are significant differences in their execution logic and application. Apache Airflow is particularly suitable for complex but static workflows defined as directed acyclic graphs (DAGs). This makes it an ideal solution for scenarios where workflows need to be planned in detail and executed with a fixed structure. Airflow provides a user interface that enables detailed visualisation of workflows and their execution. In addition, it supports a variety of integration options that make it a robust choice for complex data processing tasks.
+
+Prefect, on the other hand, is better suited to simpler workflows that require a lightweight orchestration solution with dynamic workflows. It is particularly beneficial when workflows need to be changed or customised regularly, as it allows a more flexible definition of tasks and their dependencies. Prefect's approach focuses on maximum ease of use and customisability and provides features for efficient error handling and recovery. This flexibility makes Prefect an attractive option for teams that need to react quickly and adapt their workflows regularly.
+
+To summarise, the choice between Apache Airflow and Prefect depends on the specific requirements of your workflow. If you have complex, static workflows and want comprehensive control and visualisation, Airflow is the better choice. However, if you prefer more flexible, dynamic and streamlined workflows, Prefect is the more suitable platform. Both tools offer powerful workflow orchestration capabilities, but their differences in structure and execution should be considered when making a choice.
+
+
+For a quick and uncomplicated test of Prefect, we recommend using the cloud version, which is available at Prefect Cloud Pricing (https://www.prefect.io/pricing). This offers a free version to try out.
+
+Getting started with Prefect Cloud is easy:
+
+    1. visit the above-mentioned website and create a user account.
+    2. create a new workspace after logging in.
+    3. for the next step you need a working Python installation. You can install Prefect in your Python environment using the pip install prefect command.
+    4. After installation, you can log in to the cloud using the prefect cloud login command and establish a connection to the Cloud Engine.
+    5. you can then create a sample flow by saving the corresponding code in a file and executing it.
+
+When the code is executed, it is automatically executed and displayed according to a defined schedule. Various parameters are defined within the serve method, which includes both properties of the deployment and specific tags. The latter makes it easier to manage and keep track of multiple runs. The parameters function enables the specification of parameters to be passed to the flow. This is particularly useful if parameters are to be transferred dynamically or extracted from existing configurations. The execution interval of the flow is also specified. For example, an interval value of 60 means that the code is automatically executed in a cycle of 60 seconds. A flow in the engine represents a workflow that can consist of several flows. It is also possible to define individual tasks within a flow as tasks using the @Task annotation. Flows can be marked with various runner types such as the DaskRunner. This marking enables Prefect to manage the execution of flows automatically and in parallel.
+If a run is delayed, it is labelled as 'late' and made up for at a later point in time as soon as this is possible. This procedure enables efficient parallelisation of processes and runs. Even in the event of short-term failures, the pending jobs can be made up for easily and efficiently in this way.

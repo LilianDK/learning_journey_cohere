@@ -1,0 +1,56 @@
+How Father Christmas plans his route (in a way that is environmentally conscious)
+
+You won’t believe it! Father Christmas was just in our office. Yes, the real Father Christmas. And I can tell you, he really does look like you imagine him: a plump, friendly old man with a full white beard decked in red and white.
+
+As it turned out, he too recognised the signs of the times: Father Christmas wants to reduce his carbon footprint. The feed consumption of his reindeer and their overtime are bothering him as well. And that is exactly why he came to adesso – I will go on and tell you about it!
+
+
+He greeted us with a hearty laugh, ‘Ho! Ho! Ho!’ and then started, ‘As you know, I fly all around the world every Christmas giving out tons of presents.’ And then without missing a beat he move right on to his complaint, ‘It is a hassle, I tell you... and it eats up quite a bit of resources too. The reindeer feed is getting more and more expensive, and my sleigh is getting a little long in the tooth. And do not get me started on the exhaust. Something simply has to change!’
+
+We knew this all too well from our everyday consultancy work, and our curiosity was immediately aroused. ‘Oh yeah, a lot of people are worried about that right now. What do you think we can do about it?’ we asked Father Christmas.
+
+Father Christmas seemed to have been consumed with his situation for quite some time because he answered swiftly and at length: ‘The problem is that I need to travel more efficiently – more cost-effectively to put it simply – because otherwise, the gifts have to be smaller. And that is just not possible. Every year I think to myself: Is this really the best route? Is there not a shorter one? That being said, leaving a city out and thus giving fewer people gifts is by no means an option!’
+
+Our team’s ears perked up because this sounded like a planning problem that we could help with using our analytics methods: ‘Okay, let us look at the situation in more detail. What exactly is your role in planning on Christmas night?’
+
+It was not difficult for Father Christmas to explain his daily work routine. ‘Starting from my base at the North Pole, I have several hundred places to fly to, spread throughout the globe. At each one of them, I unload a few bags of gifts, which are then distributed by my elves on site,’ he explained to us. ‘I wonder: In what order should I fly to my list of places so that my round trip is as short as possible? Every air mile saved is good for both my wallet and the climate. And my reindeer would also benefit from working less overtime.’
+
+For us, the matter was settled. That sounded like one of our favourite problems. No, not ‘problem’ in the sense of worry or inconvenience – quite the opposite – in the sense of tasks that we can accomplish using the right AI technology. ‘Father Christmas, you are describing a very well-known optimisation problem! We call it the travelling salesman problem (TSP).’
+
+‘The thing is, I do not sell anything; I give presents to people... ’ Father Christmas added determinedly, as he did not seem to feel he had been understood.
+
+Steadfast, we replied, ‘Yeah, of course! But the problem is all the same. What you are looking for is the shortest round trip through a slew of places on the map.’ We quickly whipped out our laptops and modelled a little round trip problem across the seven continents to illustrate. With seven continents, there are 360 different possible combinations for planning a route! With so many possibilities it is easy to lose track and not really know whether the route that was just chosen is the best one. However, we used our method to come up with a rather accurate solution and knew that it was the best one. ‘Look, Father Christmas! This example route consists of only one landing point on each of the seven continents. And it is exactly this route that is the shortest and therefore the most economical for your resources! The shortest total distance with this one is only 53,377.43 air miles!’
+
+
+‘Yea! That is exactly what I am looking for!’ Father Christmas was back on the same wavelength with us and added, ‘Does that mean you can tell me how efficiently I am flying right now, or better yet, how I can actually distribute gifts more economically and in a way that is as environmentally friendly as possible?’
+
+‘How have you been you planning your route up to now? Let us say you have these 50 places to fly to.’ We drew a few dots on the whiteboard. ‘And you start up here on the right at the red dot. What would your route be then?’ We handed Father Christmas the marker and pointed to the dots on the whiteboard.
+
+
+Father Christmas took the marker and began to draw. ‘Actually, I am already optimising my route as best I can – at least I think so. Once we have unloaded the presents somewhere, my reindeer get ready to leave again. In the meantime, I look to see which place is closest to us – in other words, the place to which we have the shortest flight path. And that is where we are going.’
+
+There we have it: optimisation potential! We explained: ‘Oh, that is a heuristic approach. We call it a simple greedy method. Greedily, you take the nearest location each time. This may seem to make sense at the time, but in the big picture it is everything but optimal. You also see, for instance, that the flights get longer towards the end of the trip.’
+
+‘You are right about that,’ sighed Father Christmas. ‘Towards the end of the tour, my sleigh team always grumbles a lot because of the sometimes very long flight distances. But what should I do about it? As time goes on, there are fewer and fewer places to fly to, so the routes automatically get longer, do they not?’ Father Christmas seemed to have given up, then regained hope. ‘What is your solution? How much better can I get? How many resources can I save?’
+
+We recommended that Father Christmas get a quick cup of hot chocolate. In the meantime, our team transcribed the points from the whiteboard into geo-coordinates and we ran our algorithm for optimal route planning. With the help of Gapzero, it took just a few seconds to formulate and calculate the solution: ‘Father Christmas, we have the best route!’ we shouted towards the lounge. The man with the white beard came rushing over to us and listened eagerly.
+
+‘16 per cent – that is the amount of distance you can save.’ We presented him with the results:
+Nearest neighbour heuristic – 82,541 air miles (left) and a 16% more efficient optimal solution with 69,417 air miles (right)
+
+‘That is over 13,000 air miles less – madness!’ Father Christmas was amazed. We replied: ‘We can even assure you that no better route exists than this one. And there are tons of possible round trips through 50 places. The key word here is holistic optimisation.’
+
+Father Christmas was a bit overwhelmed. ‘Holy night! That sounds complicated! Can you also plan the optimal route for me for all the cities and places in the world?’
+
+Our response was unanimous: ‘Well of course! No problem at all.’
+Conclusion
+
+Father Christmas’ planning problem – taking into account various other conditions we have looked at before – is just one of many optimisation problems that we can solve with intelligent solutions. This particular field, which involves solving optimisation problems, is what is called prescriptive analytics. In prescriptive analytics, our aim is to determine optimal recommendations for action in complex real-life situations. In other words: we want to determine the best next possible steps for a difficult or complex decision-making or planning problem and present them in concrete terms so that we can move straight into the implementation phase. In doing so, we want to find out whether we will achieve our goal, factoring in the constraints that we have to take into account.
+
+By transferring our real-life problem into a mathematical model, we are able to solve complex problems. Because by using a mathematical model, we can specifically quantify our problem and compare different alternative courses of action and gain insight into which options are even available to us. The discipline that deals specifically with mathematical problem-solving models such as these is called operations research or also management science. This discipline deals with the mathematical formulation of real-life problems with regard to decision-making or planning problems. Computer programs (algorithms) that make it possible to calculate complex models are also developed in this discipline.
+
+Prescriptive analytics differs from predictive analytics in that the latter deals with analysing data in order to make predictions, for example, in terms of the question ‘What is going to happen tomorrow?’ (time-related question) or ‘What animal do I see in the picture right now?’ (sensorimotor question) with the aim of answering such questions as well as possible in a way that is quantifiable.
+
+There are many other use cases besides planning a route for Father Christmas. To name a few more examples: baggage control at airports, production planning in the steel industry, schedule planning, maritime logistics in the automotive industry, power plant deployment planning, combining decentralised energy systems in a single network or even dividing electoral districts in Germany.
+
+I hope I was able to use this example with Father Christmas to give you somewhat of a better understanding of this analytical solution’s special features!

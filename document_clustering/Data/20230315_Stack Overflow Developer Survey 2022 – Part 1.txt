@@ -1,0 +1,69 @@
+Stack Overflow Developer Survey 2022 – Part 1
+What is stack overflow?
+
+A stack overflow is an error that occurs when a programme tries to use more memory than is available in the stack. A stack is a storage area that is intended to hold data. A stack overflow overwrites the storage locations in the stack, which makes it possible to install malware. However, the Stack Overflow website is a website that offers questions and answers regarding a wide range of different programming languages and technologies. It was established in 2008 as a more open alternative to other question and answer websites for programmers. Users can earn reputation points and badges for contributing valuable content to the website. As of March 2021, Stack Overflow had gained over 14 million registered users and received over 21 million questions and 31 million answers. The website has become an important resource for programmers – the eight most discussed topics being JavaScript, Java, C#, PHP, Android, Python, jQuery and HTML. Stack Overflow was sold to Prosus, an Internet conglomerate based in the Netherlands, for $1.8 billion in 2021. Generally speaking, it can be said that every software developer searches for something on Stack Overflow at least once a day.
+What is the Developer Survey?
+
+The Stack Overflow Developer Survey is an annual survey of developers that is conducted by Stack Overflow. The goal of the survey is to gain insights into various aspects of the developer community, including demographics, technology preferences, work habits and career aspirations. The survey has been conducted annually since 2011 and has always received a large number of responses from developers around the world. The results of the survey are published on the Stack Overflow website and offer valuable insights into the current state of the developer community.
+
+The distinction between a professional and a beginner in programming can be somewhat subjective, as it may depend on a person’s experience, skills and knowledge in terms of programming. In general however, a professional programmer is someone who has a high level of expertise in one or more programming languages and is able to utilise that expertise to design, develop and maintain software systems or applications. A professional programmer may also have advanced knowledge of computer science concepts and principles as well as experience working on complex software projects. A beginner, on the other hand, is someone who is just starting out in programming and may only have limited experience and knowledge in terms of programming languages and concepts. A beginner can learn programming on their own or via a formal training programme and work on smaller, less complex projects while they develop their skills.
+
+It is important to note that in programming, the distinction between a professional and a beginner is not necessarily set in stone and that a person’s level of proficiency can change over time if they gain more programming experience and knowledge about programming. A distinction between these two profiles is made very often in this study.
+Developer profile
+
+This section is about the developers: What education do they have? How long have they been working? How do they like to learn?
+Developers’ education level
+
+This graph shows the education professional developers have received:
+
+
+In this survey, it was found that 48 per cent of developers have a bachelor’s degree, 24 per cent have a master’s degree, three per cent have a PhD and 13 per cent are still studying.
+
+There may be several reasons why a higher percentage of developers in a survey have a bachelor’s degree as opposed to a master’s degree or a doctorate. Some possible reasons for this could be that:
+
+    For many developer jobs, a bachelor’s degree may be enough: In some cases, a bachelor’s degree in computer science or a related field is enough to qualify for a job as a developer. A lot of employers place more emphasis on practical skills and experience than on advanced degrees.
+    A master’s degree or a doctorate are not absolutely essential for career advancement: Some developers believe they can advance their career and gain new skills on the job instead of pursuing a higher degree.
+    The costs and time required for a higher degree can be daunting: obtaining a master’s degree or a doctorate can be a significant burden in terms of money and time. Some developers decide that the investment is not worth it for their career goals.
+
+It gets really interesting when you look at the beginner coders’ answers:
+It is clearly visible that most developers (one-third) started learning programming before they began their degree.
+
+There are a number of reasons why it can be beneficial for children to start programming at a young age:
+
+    First of all, by learning to program, children are able to develop important problem-solving and critical thinking skills as well as a solid foundation in logic and algorithms. These skills are not only useful in the field of computer science, they are also useful in a wide range of other professions.
+    Secondly, learning to program can help children prepare for higher education and future careers in the tech sector. The demand for qualified programmers and developers is growing rapidly, and those with a firm foundation in programming are well equipped for these types of jobs.
+    Lastly, learning to program can also be a fun and rewarding experience for children because it allows them to design and construct projects that can have a real impact on the world. This can be a motivating and engaging way for children to learn and spark a lifelong interest in technology and computer science.
+
+There are several reasons why many programmers have under ten years of experience these days:
+
+The field of computer programming is constantly evolving, and new technologies and programming languages are constantly being developed. This means that someone who has been programming for a long time may not have had the opportunity to work with the latest technologies and may not be as up-to-date as someone with less experience who focused on learning these newer technologies.
+
+The demand for skilled programmers has grown significantly in recent years, which has led to an influx of people entering the field. This has led to a larger pool of programmers who have less experience because they are new to the field.
+
+Furthermore, the barriers to entry for programmers have decreased in recent years because online resources and educational programmes that make it easier to learn programming are available. All in all, it is interesting that a lot of developers have less than ten years’ experience these days, as this reveals the rapid pace of change in the field and the growing demand for qualified developers. It also highlights the fact that it is possible for people to enter the field and become successful programmers even if they are relatively new to programming.
+
+As with the number of experiences in the non-professional context, the phenomenon is much the same here. High demand also results in higher salaries. There has been an influx of developers in recent years in conjunction with training being more readily accessible. This is why most developers have been working in software development for a relatively short amount of time (less than ten years). Of course, it is also the case that as of a certain age, people are more likely to take on other roles and not simply remain developers. This is because the software landscape is evolving very rapidly and experienced developers are more likely to be needed in more senior roles, such as product owner or project manager.
+
+These results indicate that a significant majority of developers prefer to learn programming by using online resources, such as videos and blogs, rather than traditional methods, such as books or physical media. This could be due to the convenience and accessibility of online learning, as well as the opportunity to learn at their own pace. Moreover, it seems that a considerable number of developers also learn programming via formal education at schools or universities as well as through on-the-job training.
+
+It is important to bear in mind that different learning methods work best for different people. It is likely that the most effective way for a developer to learn depends on their individual learning style and preferences. Some people prefer structured learning environments such as schools or online courses, while others prefer the freedom and flexibility of self-guided learning using online resources. Ultimately, the most important thing for developers is to find a learning method that works best for them and helps them achieve their goals.
+
+It therefore comes as no surprise that for older developers, books are more important than online resources. 
+
+
+Udemy is by far the most widespread online platform for learning. Udemy is an online learning platform that offers a wide range of courses on various topics, including business, technology, personal development and much more. The platform allows instructors to create and publish their own courses, which are then made available to students throughout the entire world. The platform offers courses in numerous languages, and a lot of the courses include a certification upon completion. As of November 2022, the platform has more than 57 million students, 213,000 courses, 74,000 instructors offering courses in over 75 languages and 773 million course enrolments (source: Udemy About Us). The fact that Coursera comes in second is intriguing.
+
+Whereas at Udemy the certifications are rather less meaningful, Coursera boasts proper bachelor’s and master’s programmes in which it is possible to obtain a degree at a partner university. Exams and project work are par for the course in such cases.
+The top paying technologies
+
+The ranking of the top paying programming languages is interesting because with Clojure and Erlang, languages that are not frequently used tend to be very well paid. Accordingly, there are only a few developers who are qualified to program in such languages, which naturally drives up their salaries. It is also intriguing that Python has overtaken Java and that Java and JavaScript can be seen very far down in the graph. One reason for this could be that a large number of newcomers are learning these languages, which means that there is a large supply of developers, which in turn has a negative impact on the price. This stands in contrast to the severe shortage of Java developers in general.
+
+ What makes Clojure so special?
+
+Clojure is a functional programming language that is particularly well suited for certain types of problems – for example, data processing and parallel programming.
+
+On top of that, Clojure is a niche language, and compared to widely used languages such as Java or Python, there are fewer developers who have mastered this language. As a result, developers who master Clojure are highly skilled and in high demand, which can drive up their salaries. It is also intriguing that COBOL developers rank only slightly above Python developers.
+
+COBOL is a programming language that is particularly important in the banking sector. Meanwhile, attempts are being made to translate COBOL programmes, as there are hardly any COBOL developers left since most of them have already retired. Therefore, we would have suspected that COBOL developers are paid significantly better.
+
+In summary, it can be said that rare languages seem to pay very well, but only if they have a useful purpose and are more or less unique in their field. This can be seen with languages such as Delphi. It is certainly also a rare language, but that is just because it is already very old and has been replaced by other languages, whereas Clojure is very rare and very modern but also very specialised.

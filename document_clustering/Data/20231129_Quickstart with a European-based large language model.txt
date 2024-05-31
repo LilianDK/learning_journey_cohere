@@ -1,0 +1,87 @@
+Quickstart with a European-based large language model: Aleph Alpha’s ‘Luminous’
+
+Aleph Alpha is an AI company that is based in Heidelberg, Germany, and aims to create a European alternative to OpenAI. Founder Jonas Andrulis was working as a team leader in AI research at Apple when he noticed the fascinating developments in the field of artificial general intelligence (AGI). Andrulis was astonished to find that no one in Europe had set out to develop an AGI model. He decided to take action, quit his job at Apple and founded Aleph Alpha in 2019.
+
+Aleph Alpha works on the technical development of large language models (LLMs) in cooperation with leading European universities and research institutions.
+
+The company aims to develop models that are safe, transparent and fair as well as ones that are in line with our social values. The development of Aleph Alpha is two-track:
+
+    The company is intensifying the technical development of LLMs to create a viable basis for subsequent applications.
+    Jonas Andrulis seeks committed collaborative partnerships to find inspiring solutions.
+
+The LLMs require a lot of computing power, which in turns means that it becomes a top priority to build competitive computing capacity and ensure its sustainable expansion. Andrulis made a conscious decision to encourage all employees to move to Heidelberg in order to strengthen the face-to-face exchanges on site and to promote a friendly working atmosphere. The city of Heidelberg offers Aleph Alpha an enormous density of phenomenal universities and dedicated technicians and engineers in the region’s companies. Aleph Alpha has an additional location in Berlin.
+Why is AI that is from Europe so important?
+
+Artificial intelligence (AI) is a crucial factor for technological progress, economic growth and competitiveness in today’s digital world. The development of a strong European-based AI is of immense importance for Europe, especially in the context of the US CLOUD Act (Clarifying Lawful Overseas Use of Data Act) enacted in 2018, which has far-reaching implications for data protection and data sovereignty. We will explain here the reasons why having an AI based in Europe is important for the continent.
+Data protection and data sovereignty
+
+The CLOUD Act allows US law enforcement agencies to access data stored in cloud services, regardless of where the data is stored and without regard to local data protection laws. This poses a significant challenge to the protection of the privacy of E.U. citizens and businesses based here. Developing AI technologies and infrastructures for Europe can help reduce dependence on US-based cloud services and maintain sovereignty over European data and keep it in European hands.
+Competitiveness and innovation
+
+Europe needs to invest in the global AI market to remain competitive and drive innovation. By creating its own AI technologies, Europe can strengthen its position in international competition and help European companies keep pace with global technology giants like the US and China.
+Compliance with European values and regulations
+
+Europe can ensure that these technologies comply with E.U. values and laws, such as the General Data Protection Regulation (GDPR), by developing its own AI. This ensures that the privacy and fundamental rights of E.U. citizens are protected, while at the same time promoting innovation and technological progress.
+Quickest quick start possible
+
+Aleph Alpha offers the possibility to try out the models for free by providing some tokens. To make use of this possibility, interested users can register on the website https://app.aleph-alpha.com/. After logging in, they click ‘Playground’ in the top left corner of the screen and select ‘Get Started’ from the dropdown menu that appears. There are numerous examples available there to experiment with directly. For more options, they can follow the path ‘Playground -> Complete’.
+
+
+The user interface may initially seem a little complex, but it can be quickly explained. The panel on the left of the interface displays the settings available to you for changing specific properties of the model. Under ‘Model’, you can choose between the four models: Base, Extended, Supreme and Supreme-Control. ‘Maximum Tokens’ specifies the maximum number of tokens (that is, characters) that the model is allowed to output. They can use ‘Temperature’ to define how creatively the model will respond. A higher value leads to more varied answers. All settings are also explained by clicking the lowercase ‘i’ with a circle around it.
+
+The large box in the middle of the screen is the input area for the model. You can enter anything you want to tell the model here. For example, it can be texts that you want to have summarised, documents that you want to be evaluated, pictures, or simply questions that you want to have answered. The model uses this input to generate a suitable answer or evaluation based on the available data.
+
+Once the information has been entered in the large box, it can be sent. The model will then process your request and show you an answer in the lower field, which is titled ‘Completion’.
+
+The upper right dropdown menu offers a selection of use cases that serve as examples, and if you want, you can try them out. These use cases demonstrate how the model can be used and what results it can achieve. You can use these examples to familiarise yourself with how the model works and to experiment with it.
+
+Models
+
+Three basic models are available with Aleph Alpha, and there are also additional specialised configurations available. The Base models include Luminous-base, Luminous-extended and Luminous-supreme. More models may be added in future. The main differences between the models are in terms of their size.
+
+    Luminous-base has a size of 13 billion parameters, making it a ‘smaller’ model. The special models for Base have the ability to process images and generate embeddings. Embeddings can be used to capture the semantics – the underlying concept of a sentence – enabling AI-powered document searches and delivering outstanding results.
+    Luminous-extended is significantly larger with 30 billion parameters and acts as a versatile Swiss army knife among the Aleph Alpha models. It already offers excellent performance for most applications while remaining very cost-effective at around 0.4 cents per page of A4 paper.
+    Luminous-supreme is currently the largest model with 70 billion parameters. A special model of Supreme is Supreme-Control, which is called a controllable model. This means that the model can be assigned a specific role to which it is oriented. For example, you could instruct the model to act as a chatbot that always responds in the form of a poem, and the model does just exactly that.
+
+We recommend starting with Luminous-extended when using these models and then iteratively testing which model offers the optimal trade-off between cost and performance.
+
+In addition, there is Magma. It acts as an adapter, which gives you a way to submit images to the networks and have them evaluated.
+
+Explain
+
+Explain is a new feature from Aleph Alpha that aims to solve the problem of LLMs hallucinating. LLMs tend to make up information or lie when they do not know exactly how to respond to a query. This can lead to inaccurate or even wrong answers, which is a major problem when using LLMs in different application areas.
+
+Explain provides a solution to this problem by allowing the user to identify whether the information generated by the LLM comes from the text or not. The user can correct the model if a piece of information does not come from the text in order to ensure that the generated answer is accurate and precise.
+
+To experiment with Explain, you need to run a query in Complete mode and then click the ‘Explain’ button at the bottom left of the screen. This instructs the model to explain the information generated and shows you where the information came from and how it was generated. It allows you to ensure that the information generated by the model is correct and trustworthy.
+
+
+The screenshot above shows how Aleph Alpha’s Explain feature works. The colour of the highlighted text indicates its significance for the answer: the deeper the red of the highlighted text is, the greater its significance for the generated answer. The Explain feature makes it possible to see whether the information in the model’s output actually comes from the text given to the model or whether it may be made up.
+
+The Explain feature helps you ensure that the answers generated are based on an accurate and trustworthy foundation. In particular, this functionality makes it possible to prevent the so-called ‘hallucinations’ of large language models, where the model invents information or lies when it does not know exactly how to respond to a query.
+
+Overall, the Explain feature offers an important opportunity to improve the accuracy and trustworthiness of LLMs and thus expand their areas of application.
+Prompts
+
+A prompt is a request or nudge sent to an AI model to get a certain kind of response or reaction. Prompts can be presented as text, images or other data formats. For example, a text prompt to an AI model like ‘Translate the following text: “Hello, how are you?” into German’ can be used to obtain a German translation of the question.
+
+Zero-shot learning refers to the ability of an AI model to perform tasks for which it has not been given explicit examples during training. The model uses its general knowledge and its ability to make connections to solve the task. For example, an AI model trained for machine translation can be asked to solve a text task in mathematics without having seen explicit examples of such tasks before.
+
+Few-shot learning is the process by which an AI model learns a new task with only a few examples. In contrast to zero-shot learning, the model in this case is given some data points as examples to improve its performance in solving the new task. An example of this would be to train an AI model that has been trained in English with only a few additional examples in a new language, such as French, and then test how well it translates texts in that language.
+
+API and clients
+
+Aleph Alpha has two clients and the standard REST API. The clients are written in Python and Rust and offer the best possibility to connect models. Of course, all this can also be done via the REST API, that is, it can be accessed via any programming language. You can access the API documentation here: https://docs.aleph-alpha.com/api/.
+Demo repository
+
+I have created a small demo repository that makes it possible to use the API with Python quickly and easily. In addition, Aleph Alpha offers a demo repository with which the API can be tested directly in the browser using Google Colab. My demo repository can be found at the following link: https://github.com/mfmezger/aleph_alpha_quickstart (you will need Python installed).
+
+The online repository of Aleph Alpha is located at https://github.com/Aleph-Alpha/examples. After opening the page, scroll to the heading ‘Overview’ and click ‘Open in Colab’. This opens Google Colab (you will need to have an account on Google). The individual cells can be executed by pressing ‘Shift’ + ‘Enter’.
+A brief introduction to my repository: There are three scripts in the ‘aleph_alpha_quickstart’ folder with which you can test the capabilities of Aleph Alpha. The first script is called Complete. It shows an example of how to extract tables from documents. The embedding script shows how to make large texts searchable with embeddings. The Summarize script shows how to quickly summarise large texts with the API.
+ Outlook
+
+I hope that you will find it both interesting and exciting when you experiment with this impressive technology. Do not hesitate to contact adesso if you discover any use cases for Aleph Alpha at your company or for your customers. We are happy to support you in the rapid implementation of prototypes and the testing of this technology.
+
+With Aleph Alpha, you have the opportunity to develop advanced AI-based solutions that can help optimise your business processes and better serve your customers. The applications of natural language processing are diverse and offer enormous potential in many industries. I am absolutely certain that Aleph Alpha will play an important role in the further development of this technology and the promotion of an AI industry in the E.U.
+
+I am looking forward to a possible collaboration with you and to developing innovative solutions together with you and thus contributing to the digital transformation.

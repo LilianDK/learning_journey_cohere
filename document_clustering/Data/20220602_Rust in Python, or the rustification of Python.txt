@@ -1,0 +1,73 @@
+Rust in Python, or the rustification of Python
+
+In the dynamic landscape of software development, we come across new programming languages, frameworks and tools almost every day that are designed to make our work as developers more efficient, faster and more secure. Python and Rust are two such languages that have been gaining influence in recent times.
+
+In previous blog posts, I discussed the advantages of Rust and described in detail the idea of making the complete switch to Rust. In this one, I will go one step further and focus on ways to combine these important languages.
+
+However, you may be asking yourself why this is a topic that we should even bother with at all. Python is known for being easy to learn and for the ability to quickly develop apps with it. However, it reaches its limits when it comes to requirements where performance matters most. Rust, on the other hand, offers high levels of security and performance but has a steeper learning curve. A combination of these two languages could offer us the best of both worlds, that is, the simplicity and productivity of Python coupled with the performance and security of Rust.
+
+In this blog post, we will take a closer look at how we can integrate Rust into Python. We will take a look at the tools and libraries available, analyse how they are used in real-life projects and discuss the pros and cons of combining these two languages.
+Why use Rust in Python?
+
+Before we get into the technical details, you may be wondering: Why should I integrate Rust into Python in the first place? The answer lies in the unique strengths that Rust can bring to the Python world.
+Increased performance
+
+Python is known for its simple, easy-to-understand syntax and for being easy to read. However, it is not particularly powerful, especially if you compare it to compiled languages such as Rust. If you write code that requires a lot of computing power (such as data analytics or machine learning), integrating Rust could provide a significant boost in performance.
+
+Memory security
+
+Rust was developed with a heavy focus on memory security. Unlike Python, which uses automated garbage collection, Rust gives developers more precise control over memory allocation. This can lead to more efficient code that is less susceptible to memory leaks or other memory errors.
+Concurrency and parallelism
+
+The Python Global Interpreter Lock (GIL) is a mechanism in the CPython implementation of Python that prevents multiple native threads from executing Python bytecodes at once, which limits parallelism on multiprocessor systems. Rust, on the other hand, offers powerful, secure abstractions for parallel and concurrent programming, which can lead to greater efficiency on multicore processors.
+How can I integrate Rust into Python?
+
+There are various ways to integrate Rust into Python projects. A common method is to use special libraries that bridge the gap between the two languages. Here are a few examples:
+PyO3
+
+PyO3 is probably the best and most well-known library for integrating Rust into Python. It allows users to create and manipulate Python objects in Rust and vice versa. PyO3 also supports the creation of Python extension modules in Rust. The following screenshot shows an example of the annotations with which functions and modules can be written in Rust and used in Python.
+maturin
+
+maturin is a build tool specifically designed for PyO3 to simplify the process of creating and distributing Python extension modules in Rust.
+
+To integrate Rust into Python, the corresponding Rust code must first be written and then compiled into a library that can be called from Python. The individual steps may vary depending on the library and application you select.
+rust-cpython
+
+Another library is rust-cpython. Like PyO3, rust-cpython allows Python to interact with Rust, though it has a slightly different focus. While PyO3 tries to make Python interoperability as Rust-like as possible, rust-cpython is more focused on providing a Python-like API. However, this project has since been discontinued. Using PyO3 instead is therefore recommended.
+Examples of Rust in Python projects
+Hugging Face Tokenizers
+
+Tokenizers is a Python library that makes it possible to efficiently tokenise natural language texts. It is used by a number of natural language processing libraries, including Hugging Face Transformers and spaCy. Tokenizers uses the Rust programming language to implement its performance-critical components such as byte-level coding and decoding. Aleph Alpha has also written its tokeniser in Rust (https://docs.rs/aleph-alpha-tokenizer/latest/aleph_alpha_tokenizer/). If Rust is used, Tokenizers can achieve high performance and a high level of memory security all at once. Although Tokenizers is written in Python, Rust is only used for the performance-critical components. This approach combines the flexibility and simplicity of Python with the speed and security of Rust, making it possible to efficiently and securely process natural language texts.
+
+Example of tokeniser use in Python, however with an underlying Rust implementation: 
+Ruff
+
+In recent years, the JavaScript development community has shown a remarkable commitment to improving the execution speed of their software. It is time for the Python development community to consider a similar strategic move. Tools such as ‘swc’, ‘esbuild’, ‘Bun’ and ‘Rome’, which were developed in more powerful programming languages such as Rust, Go and Zig, have significantly improved the performance of the JavaScript toolchain. This combined effort, often referred to as Rust certification of the JavaScript toolchain, points to the vast potential that Python tools could also leverage to improve performance.
+
+Charlie Marsh confirmed this when he presented ‘Ruff’, a Python linter written in Rust. Ruff proved to be significantly faster than comparable tools. To give a few examples, it is roughly 150 times faster than Flake8 on macOS (or about 25 times faster when Flake8 multiprocessing is enabled), roughly 75 times faster than pycodestyle and about 50 times faster than pyflakes and pylint. Although Ruff was developed in Rust, it integrates seamlessly into the Python environment and can be installed like any other Python-based command line tool using the ‘pip install’ command. That is because Python bindings are used in Ruff.
+
+The results produced by Ruff highlight the advantages of the hybrid use of Rust and Python and open up new ways to optimise the Python toolchain. This lends credence to the idea that ‘rustification’, which has already generated impressive performance gains in the JavaScript community, could also take on a greater role in the Python community.
+Sentry
+
+Sentry, a company that provides error monitoring services, was encountering performance issues when processing source maps in Python, resulting in a performance bottleneck. After a thorough investigation of these issues, the Sentry team decided to replace Python with Rust because Rust offered better performance.
+
+As part of making the switch and seeing the improvements in performance, Sentry developed a Rust module to optimise source map processing. This module was integrated into the Python code base via a special Python library called ‘libsourcemap’. The ‘libsourcemap’ library serves as an interface to the Rust implementation and makes it possible to use Rust in the Python environment. This is achieved by using CFFI and C headers, which generate a dynamically shared library at runtime.
+
+The Rust implementation delivered impressive results. CPU utilisation and processing times for source maps have been significantly reduced, with the average processing time cut to approx. 400 milliseconds. This lowered the total processing time for all events to around 300 milliseconds.
+
+Despite integrating Rust, Sentry remains loyal to the Python community. However, this project is a great example of how making the right choice of tools to perform specific tasks can lead to significant gains in performance. It is worth noting that this blog post dates back to 2016 when the integration of Rust was even more complicated. Since then, the integration of Rust into Python has become much easier thanks to advances such as PyO3. For more information, go to https://blog.sentry.io/fixing-python-performance-with-rust/.
+Drawbacks of integrating Rust into Python
+
+Needless to say, there are downsides to the integration of Rust into Python, which I would like to explore here briefly.
+
+    Learning curve: Rust has a steeper learning curve than Python, especially when it comes to concepts like ownership and lifetime. This can lead to longer development times, particularly if your team is not yet familiar with Rust.
+    Complexity: Integration of Rust into Python can increase the complexity of your project. You not only need to be proficient in both languages, but also in the tools and techniques required to ensure interoperability between them.
+    Build process: The build process for Rust is more complex than the accompanying process for Python. The Rust code must be compiled and then converted into a format that can be used by Python. This can lead to additional challenges in terms of build automation and dependency management.
+    Smaller community: While the Rust community is growing and there are more and more high-quality crates (Rust libraries) available, Python still has an advantage when it comes to the availability of third-party libraries due to its longer history and larger community.
+
+You should therefore carefully weigh up the pros and cons before making any decision to integrate Rust into a Python project. It is important to consider the specific requirements and context of your project and decide whether the benefits outweigh the added complexity and potential challenges.
+Conclusion
+
+Integrating Rust into Python projects can be an effective way to improve performance, security and concurrency. However, doing so is not without its challenges. For example, Rust has a steeper learning curve and the integration of Rust into Python can increase the complexity of your project. In addition, the build process could potentially be more complicated and there may be fewer libraries available.
+
+Ultimately, the decision on whether or not to integrate Rust into your Python project depends on your specific requirements and the context of the project. If performance, memory security and concurrency are important to you and you’re willing to spend the time to learn a new language and deal with the additional complexity that comes with this, Rust could be a valuable addition to your Python toolkit.

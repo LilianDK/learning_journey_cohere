@@ -1,0 +1,129 @@
+AI buzzword bingo – the key terms you need to know to be able to talk about AI
+AI (artificial intelligence)
+
+Artificial intelligence (AI) is a multidisciplinary field of computer science that aims to develop machines and software capable of mimicking human-like intelligence and learning and problem-solving abilities. AI systems use algorithms and data to analyse information, recognise patterns and make decisions or predictions. This technology has wide-ranging applications, such as natural language processing, image recognition, autonomous vehicles and personalised recommendations, to name a few.
+
+ML (machine learning)
+
+Machine learning is a subfield of artificial intelligence that focuses on developing algorithms that enable computers to learn from data and make predictions or decisions. These algorithms use statistical methods to detect patterns in data and build models that can make generalisations about new data.
+
+Example algorithms include: decision trees, support vector machines and neural networks.
+Neural nets (NNs)
+
+A neural net (also referred to as a neural network) is an artificial system based on the structure and functioning of the human brain and developed for machine learning and artificial intelligence. It consists of a multitude of interconnected neurons that process and transmit information. Each neuron receives input signals, processes them and passes on an output signal to other neurons. The training process causes the network to fit its connections and weights to improve performance on a particular task. After it has been trained, the neural net can recognise complex patterns and make predictions or decisions based on new data.
+
+
+An artificial neuron is a basic unit in neural nets that processes inputs to produce output. It consists of several components:
+
+    Inputs: The neuron receives input signals from other neurons or external data sources. Each input is associated with a weight that represents the strength of the connection.
+    Weight: The weights are scaling factors that determine the importance of a particular input to the neuron. They are fitted during the course of the training process.
+    Transfer function: In the neuron, the input signals are multiplied by their respective weights and then added up to obtain a weighted sum value.
+    Bias: A bias is a constant value added to the weighted sum to control the shift of the activation threshold.
+    Activation function: Finally, the weighted sum (including bias) is passed through an activation function that determines the output of the neuron. The activation function is a non-linear function that enables the neuron to learn and model complex patterns.
+
+The resulting output of the neuron can then be forwarded to other neurons in the network to perform the desired task.
+DL (deep learning)
+
+Deep learning is a subset of machine learning that focuses on neural networks with many layers (deep networks) to detect and learn complex patterns in data. It enables the automatic, hierarchical learning of abstract features from raw data such as images, speech and text. Deep learning is responsible for significant advances in areas such as computer vision and language processing, for example in recognising objects in images or machine translation.
+How does AI learn?
+
+Artificial intelligence learns through an iterative process that generally consists of a training and testing phase. Here is a brief explanation of the learning process:
+
+    1. Data preparation: First, the available data is divided into training, validation and test sets. The training set is used to train the AI model, while the test set is used to evaluate the performance of the model after it has been trained. The validation set is used during training to optimise the model. Further steps are then carried out, such as data cleaning (removing zero values from the data and so) and normalisation and so on.
+    2. Training: In the training phase, the AI model is fed with the training data. The model makes predictions based on the inputs and compares them to the actual outputs (in the case of supervised learning). A loss function is then used to quantify the error between the predictions and the actual outputs.
+    3. Fitting: Based on the calculated loss, the AI model fits its internal parameters (for example, weights in a neural network) to reduce the error in future predictions. This fitting process is usually controlled by an optimisation algorithm such as a gradient descent.
+    4. Iteration: Steps two and three (training and fitting) are repeated until a certain number of iterations (epochs) is reached or the performance of the model reaches a desired level using the training data.
+    5. Validation: Once the model has been trained, it is tested using the test set to evaluate its performance using unknown data. This gives an indication of how well the model generalises and whether it may be overfitting (fitting the data too well) or underfitting (fitting the data too poorly).
+    6. Fine-tuning and evaluation: If necessary, the hyperparameters of the model or the model architecture can be fitted and the training process repeated to further optimise performance. Finally, the optimised AI model is used to solve the underlying task.
+
+This learning process may vary depending on the type of AI model (for example, supervised, unsupervised or reinforcement learning) and the specific application, but the basic principles of training remain similar.
+Convolutional neural networks (CNN)
+
+A convolutional neural network or CNN is a type of artificial neural network commonly used for image recognition and image segmentation. It works in a similar way to the human eye. The basic features of a CNN are:
+
+Convolutional layers: These layers perform a convolution operation to extract features from the input data. They use filters (also called kernels) that are pushed over the input data to detect patterns and structures.
+
+Pooling layers: These reduce the dimensions of the convolutional layers and make the features more robust with respect to small shifts. The most common pooling methods are max pooling and average pooling.
+
+
+A convolution is a mathematical operation that combines two inputs to produce an output. In a CNN, convolution is applied to images to highlight features in them.
+
+Here is a simple explanation of how convolution works on an image:
+
+    1. It takes a filter (also called a kernel) – this is usually a small matrix, such as 3 x 3 pixels. The filter contains weights that are learned during training.
+    2. It places the filter over the input image. The filter is pushed over the image pixel by pixel, both vertically and horizontally.
+    3. For each step, it multiplies the filter weights by the corresponding pixel values in the input image. It adds up all these multiplications to get a single output pixel.
+    4. It continues to place the filter over the image until the entire image area is covered. The result is a new matrix with output values – which is the output of the convolution.
+    5. The output now contains features of the input image that are highlighted by the filter. For example, a vertical filter could highlight vertical edges.
+    6. Multiple filters can be applied in succession, with each one searching for specific features. The outputs are grouped into ‘channels’ or ‘feature maps’.
+    7. These feature maps are then often made smaller or filtered by adding a pooling layer. This makes the features more robust and reduces the amount of data.
+
+You can find more details in my blog post on ‘Computer vision for deep learning – a brief introduction’.
+NLP (natural language processing)
+
+Natural language processing (NLP) is the field of artificial intelligence that deals with the automatic processing and analysis of natural language. NLP systems can analyse, understand and generate language. An example of NLP is the automatic translation between languages or the question-answer functionality in digital assistants such as Siri or Alexa. GPT-4 and ChatGPT, or Aleph Alphas Luminous are also natural language processing models.
+Reinforcement learning
+
+Reinforcement learning is a machine learning approach in which an agent learns by interacting with a dynamic environment, without explicit instructions from a teacher. The agent receives rewards and punishments as feedback to improve their behaviour.
+
+The basic concepts of reinforcement learning are:
+
+    Agent: The learning algorithm that performs actions in an environment. The agent uses its current state and learning strategy to select actions.
+    Environment: The world in which the agent operates. The state of the environment is updated after each time the agent performs an action. The environment also provides the agent with rewards and punishments.
+    State: Represents the current state of the environment. It contains all the information the agent needs to make a decision.
+    Action: An operation performed by the agent that affects the state of the environment.
+    Reward: Feedback from the environment to inform the agent of how good its last action was. The reward determines the behaviour that the agent should learn.
+    Episode: A sequence of states, actions and rewards from the start to the end of an interaction. Ends when a target state is reached.
+    Target: The desired state that the agent should achieve in the environment. It is defined by the maximum total reward in an episode.
+
+The agent adjusts its strategy to get the maximum total reward over time. In this way, the agent learns the optimal strategy to achieve the target.
+
+
+In the context of reinforcement learning and training a dog, the most important points are:
+
+    1. Agent: The dog is the agent that is supposed to learn certain skills or behaviours during the course of the training.
+    2. Environment: The environment includes the dog’s surroundings and the trainer in which the dog must complete the tasks and respond to the trainer’s commands.
+    3. Observation: The observations are the commands or cues that the trainer gives to the dog. The dog must process these observations and make a decision based on them as to which action to perform.
+    4. Action: The action is the dog’s reaction to the command or cue given. The dog must perform the correct action to receive a reward.
+    5. Reward: The reward is a positive reinforcer given to the dog when it performs the desired behaviour. This can be a treat, a toy or praise from the trainer.
+    6. Strategy: The strategy is the mapping between the observations (commands) and the actions that the dog learns during the training. The dog develops an internal strategy function that helps it perform the correct action based on the observations it receives from the trainer.
+
+The main goal of the training process is to shape the dog’s strategy in way that causes it to learn the desired behaviour and receive the appropriate rewards. After the training process has been successfully completed, the dog should be able to respond to the trainer’s commands and perform the correct actions without the need for constant rewards. The dog applies the internal strategy function developed during the training.
+Computer vision
+
+Computer vision is a field of artificial intelligence that deals with the automatic extraction, analysis and processing of meaningful information from digital images and videos. Computer vision includes subtasks such as classification or segmentation (classification of pixels in images). Computer vision AI is often based on convolutional neural networks. You can find out more about this topic in my blog post on ‘Computer vision for deep learning – a brief introduction’.
+Generative adversarial networks (GAN)
+
+Generative adversarial networks (GANs) are a special type of neural net consisting of two models: a generator and a discriminator.
+
+The generator is responsible for creating new data, such as images. It uses a latent representation that is randomly generated to generate new data from it. The generated data should look as realistic as possible.
+
+The discriminator gets to see both real training data and the data artificially generated by the generator. Its task is to distinguish between them. It attempts to correctly classify the real data as real and to expose the generated data as ‘fake’.
+
+The generator and discriminator are in a continuous competition, referred to as a ‘zero-sum game’. The generator continues to evolve, producing more and more realistic data to fool the discriminator. The discriminator, for its part, improves its discrimination ability to detect the generator’s fakes. This competition drives both models to continually improve their performance.
+
+GANs are a promising technology with many possible applications. They are often used to synthesise images, but they can also be used for other types of data such as text, audio or medical data. They have produced highly convincing results and make it possible to generate huge amounts of realistic, synthetic data. This is useful when training data is sparse. GANs are a highly active area of research with plenty of questions that are still yet to be answered, but they promise to play an important role in the future of deep learning.
+
+Supervised learning
+
+Supervised learning is a form of machine learning in which the training data consists of existing examples with known results. The system learns using these labelled examples under supervision.
+
+Unsupervised learning
+
+Unsupervised learning is a machine learning method in which a model learns from unknown, unlabelled data. Unlike supervised learning, where the training data contains both input and output labels, in unsupervised learning, the training data only has input information with no associated output labels.
+
+The main goal of unsupervised learning is to identify patterns, structures or relationships within the data. The most common applications include clustering, where similar data points are grouped together, and dimension reduction, where the number of features is reduced to better visualise or analyse the data.
+
+As unsupervised learning does not require human supervision, it can be particularly useful when large amounts of unstructured or unlabelled data are available and it would be difficult or time-consuming to manually create labels (classes).
+
+Transfer learning
+
+Transfer learning is a technique in machine learning where a model already trained on a particular task or dataset is used as a starting point to solve a new, similar problem faster and with less training data. The learned features and structures of the original model are transferred to the new problem and adapted.
+
+The process of transfer learning usually includes the following steps:
+
+    1. Selecting a pre-trained model that has been successful on a similar or related task.
+    2. Adapting the model to the new problem, for example by adding or changing layers in a neural network or adjusting the model parameters.
+    3. Training the adapted model on the new, smaller data set, often with a lower learning rate so as to reduce the influence of the features that have already been learned.
+
+Transfer learning is particularly useful when there is not enough training data for the new problem or training a new model from scratch would be too time-consuming or require too much computing power. It is widely used in areas such as image and speech recognition, where pre-trained models can be applied to large, general datasets such as ImageNet or Wikipedia.

@@ -1,0 +1,75 @@
+A brief introduction to programming languages: Python – the programming language for data engineering and AI
+What is Python?
+
+Python is a versatile, sophisticated programming language used in a wide range of industries. Its simple syntax and easy-to-learn structure make it the ideal choice for beginners and experts alike. One of the main advantages of Python is the wide range of libraries and frameworks that allow developers to perform a variety of tasks with a minimal amount of code. This makes Python an efficient choice for many tasks such as data science, machine learning, web development and automation.
+
+In the field of data science, Python libraries such as NumPy, pandas and Matplotlib offer powerful tools for manipulating, analysing and visualising data. In addition, Python’s machine learning libraries such as scikit-learn, PyTorch and TensorFlow make it easy to implement complex algorithms, making Python a popular choice for building AI models.
+
+Python is also widely used in web development thanks to its powerful web frameworks such as Django and Flask. These frameworks give developers the tools they need to create robust and efficient web applications.
+
+Python is also commonly used for automation tasks such as web scraping and testing. The language’s flexibility and ease of use make it an excellent choice for automating repetitive tasks that save time and increase efficiency.
+
+In addition to its capabilities in these areas, Python can also be used to develop desktop and mobile applications, games and even scientific calculations.
+A brief history of Python
+
+Python is an interpreted high-level programming language that was first published in 1991 by Guido van Rossum. The language was developed with the aim of being easy to read and write and as efficient as possible, but still allowing developers to use advanced programming concepts. The name Python does not come from the snake, but from the comedy troupe Monty Python.
+
+The development of Python began in the late 1980s when van Rossum was working to create a new language that would remove some of the limitations of the existing programming languages at the time. He was particularly interested in creating a language that was more suitable for rapid development and scripting tasks and easy to use for both experienced and inexperienced programmers.
+
+In 1989, van Rossum started working on Python full time, and the first version of the language was published in 1991. This first version of Python was very similar to today’s language, with an emphasis on simplicity and ease of use. In 1994, the first full version of Python 1.0 was released. In 2000, Python 2.0 was released. Python 2.0 had new features, such as Garbage Collection (automatically cleans unused variables out of the memory), List Comprehension (defines how lists and iterable objects are managed) and Reference Counting (manages pointers and references in memory).
+
+It was then replaced by Python 3 in 2008, which is the major version used today.
+
+Python 3 removed a lot of redundancies and old code, which means Python 3 is not backward compatible with Python 2. However, Python 2 has now been almost completely superseded, so that is no longer a problem. By the 2000s, Python had become one of the most popular programming languages in the world, and it is still widely used today. Many large companies and organisations, including Google, NASA and the European Space Agency, use Python for their software development.
+
+In recent years, the growth of machine learning and data science has led to the development of popular libraries such as Tensorflow, PyTorch and scikit-learn. These libraries have made Python more powerful and versatile to solve complex problems.
+
+Python continues to be actively developed and maintained by a large community of contributors, and new versions of the language are released regularly. The latest version of Python is Python 3.12, which was released in February 2023.
+
+Properties of the language
+
+Python is an interpreted and object-oriented language. An interpreter language is a language in which the code is first translated into machine code at runtime. This contrasts with compiled languages such as C and Rust, which are translated into machine code before execution. The advantage of interpreted languages is that errors are caught by the interpreter at runtime, meaning that syntax errors and other errors are detected when the programme is executed.
+
+An object-oriented language is based on the concept of objects that are instances of a class. A class is a design for an object and defines properties (variables) and methods that the object can have. Classes can interact with one another and inherit from a property and methods. Besides Python, Java and C are also object-oriented languages.
+
+Example: The following figure shows the class ‘animal’, in which the basic properties that all animals possess are defined. The two classes ‘cat’ and ‘dog’ inherit the basic properties and supplement them with additional variables and methods. Another property is that affiliations in Python are governed by indentations and not by brackets as in other languages.
+ The problems with Python
+
+I would now like to take a brief look at the problems Python has.
+
+    1. Performance: Python is an interpreted language, which can make it slower than compiled languages such as C or Java. There is also a global interpreter lock (GIL) that prevents multiple threads from executing Python bytecode at the same time, which further degrades performance.
+    2. Memory management: Python consumes a lot of memory compared to other languages, and its memory management can lead to memory leaks if not handled properly.
+    3. Dynamically typed: Python is a dynamically typed language, which can make the code less predictable and more difficult to maintain. Depending on the application, this can be both an advantage and a disadvantage.
+    4. Treatment of exceptions: Python’s built-in exception handling, while very powerful, can also make code harder to read and understand if not used correctly.
+    5. Lack of parallelisation: Python has libraries for parallel programming but does not have built-in support for true concurrency.
+    6. Limited development of mobile devices and games: Python is not well suited for mobile phone or game development because it is not as fast as languages such C and is not as easy to use for graphical elements.
+    7. Inconsistent library support: The quality and support of third-party libraries can vary widely, making it difficult to decide which libraries to use in a particular project.
+
+The benefits of Python
+
+Of course, there are also advantages to using Python:
+
+    1. Easy to learn and use: Python has a simple and straightforward syntax, making it easy to learn and understand for both beginners and experienced programmers.
+    2. High-level language: Python is a high-level language, which means it abstracts away many of the complexities of low-level languages such as C or Assembly. This makes it easier to write and maintain code and develop faster.
+    3. Large and active community: Python has a large and active community, which means there is a wealth of resources and support for developers. This includes numerous libraries, frameworks and tools that speed up development and make it more efficient.
+    4. Versatile language: Python can be used for a variety of tasks and applications, including web development, data analysis, scientific computing, artificial intelligence and much more.
+    5. Cross-platform: Python can run on a variety of platforms, including Windows, Mac and Linux, making it a versatile and flexible language.
+    6. Extensive standard library: Python has a rich standard library covering a wide range of modules, for example string operations, Internet protocols, tools for web services, operating system interfaces and protocols.
+    7. Dynamic and interpreted: Python is a dynamically typed and interpreted language that makes testing and debugging code easier and also allows more flexibility and interaction.
+    8. Object-oriented and functional paradigm: Python supports both object-oriented and functional programming paradigms, allowing developers to use the approach that best suits their needs.
+    9. Popular in data science: Python libraries such as NumPy, Pandas and scikit-learn make Python a popular choice for analysing and visualising data.
+
+The future of Python
+
+It is not expected that Python 4 will ever come out. The reason for this is that the migration from Python 2 to Python 3 was a complicated one and there is a lot of opposition in the community to going through a similar process again. The only reasons for Python 4, according to van Rossum, would be if the underlying C libraries changed drastically or if there was a chance of losing the GIL (Global Interpreter Lock). The current plan is to stay with Python 3 and not release a new major release, meaning no one is working on Python 4.
+
+As for every programming language, Python also has its competitors. The main competition for Python is Julia. Julia is a sophisticated, powerful programming language designed specifically for numerical and scientific computing. Its syntax is similar to that of MATLAB, making it a popular choice for researchers and scientists familiar with that language. Julia has several performance advantages over Python, including a just-in-time (JIT) compiler that compiles code at runtime and optimised support for parallel processing. However, Python has a much larger user base and a more established ecosystem, making it the most common choice for many applications. Both Python and Julia have their own strengths and are used for different purposes, and the choice between the two often depends on the specific requirements of the project. This could change in the future, however, as many deep learning libraries can also be used with Julia.
+
+Here are some reasons why Python is expected to continue to grow in popularity:
+
+    Machine learning and artificial intelligence (AI): Python is widely used in machine learning and AI, and demand for these technologies is expected to continue to grow. It can therefore be assumed that Python will continue to be widely used in these areas in the future.
+    Data science: Python is widely used in the fields of data science and big data, and demand for these technologies is expected to continue to grow. This will also drive the use of Python.
+    Internet of Things (IoT): Python is playing a growing role in IoT and embedded systems, as it has libraries and frameworks that facilitate interaction with devices and sensors.
+    Support from large companies: Python is supported by large companies such as Google, Facebook and NASA and is used in many of their projects. This is especially true of the big deep learning frameworks (PyTorch from Facebook and TensorFlow from Google). It is expected that this support will continue in the future, further driving the use of Python.
+
+In summary, the popularity of Python will continue to grow in the future, driven by the increasing demand for machine learning, data science, web development, IoT and support from large companies. As a result, Python is expected to continue to be widely used and have a bright future.
